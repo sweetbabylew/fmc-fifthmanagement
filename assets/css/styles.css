@@ -524,9 +524,29 @@ a:hover { color: var(--green-hover); }
   font-weight: 600;
   margin-bottom: 0.9rem;
 }
-.team-card h3 { font-size: 1.25rem; margin-bottom: 0.1rem; }
-.team-card .tc-title { color: var(--green); font-weight: 600; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.team-card h4 { font-size: 1.25rem; margin: 0 0 0.1rem; font-family: var(--font-display); color: var(--green-dark); }
+.team-card .tc-title, .bio-dialog .tc-title { color: var(--green); font-weight: 600; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.06em; }
 .team-card p { color: var(--ink-soft); font-size: 0.95rem; margin: 0.7rem 0 0; }
+
+.team-group { margin-top: 2.4rem; }
+.team-group:first-of-type { margin-top: 0; }
+.tg-label { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--green-dark); margin: 0 0 0.35rem; }
+.tg-intro { color: var(--ink-soft); max-width: 64ch; margin: 0 0 1.1rem; }
+
+button.team-card { font: inherit; text-align: left; width: 100%; cursor: pointer; transition: box-shadow 0.15s ease, transform 0.15s ease; }
+button.team-card:hover, button.team-card:focus-visible { box-shadow: 0 8px 22px rgba(20, 28, 22, 0.12); transform: translateY(-2px); }
+.tc-more { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.85rem; color: var(--green); font-weight: 600; font-size: 0.92rem; }
+
+.bio-dialog { max-width: min(680px, calc(100vw - 2rem)); width: 100%; border: none; border-radius: var(--radius-card); padding: 1.6rem 1.8rem; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25); }
+.bio-dialog::backdrop { background: rgba(20, 28, 22, 0.55); }
+.bio-dialog p { color: var(--ink-soft); margin: 0.85rem 0 0; }
+.bd-head { display: flex; align-items: center; gap: 1rem; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+.bd-head .tc-initials { margin-bottom: 0; flex-shrink: 0; }
+.tc-photo { width: 54px; height: 54px; border-radius: 50%; object-fit: cover; display: block; margin-bottom: 0.9rem; }
+.bd-head .tc-photo { margin-bottom: 0; flex-shrink: 0; }
+.bd-head h3 { margin: 0; font-size: 1.35rem; }
+.bd-close { margin-left: auto; flex-shrink: 0; background: none; border: 1px solid var(--line); border-radius: 50%; width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; color: var(--ink-soft); }
+.bd-close:hover, .bd-close:focus-visible { color: var(--green-dark); border-color: var(--green); }
 
 /* ---------- Contact ---------- */
 
