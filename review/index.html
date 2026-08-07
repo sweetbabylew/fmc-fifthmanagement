@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>FMC Photo Review — August 7, 2026</title>
 <style>
-  :root{--keep:#1a7f37;--reject:#c0392b;--hold:#b7791f}
+  :root{--keep:#1a7f37;--reject:#c0392b;--hold:#b7791f;--ai:#e0b000;--gap:#8e5bc0}
   *{box-sizing:border-box}body{font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#f6f5f2;color:#222}
   header{background:#274430;color:#fff;padding:18px 24px}header h1{margin:0 0 4px;font-size:22px}header p{margin:0;opacity:.85;font-size:13px}
   .legend{display:flex;gap:16px;flex-wrap:wrap;padding:10px 24px;background:#fff;border-bottom:1px solid #ddd;font-size:13px;align-items:center}
@@ -21,20 +21,22 @@
   .chip.green{background:var(--keep)}.chip.red{background:var(--reject)}.chip.yellow{background:var(--hold)}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
   .card{margin:0;background:#fff;border-radius:8px;overflow:hidden;cursor:zoom-in;border:4px solid #bbb;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-  .card.keep{border-color:var(--keep)}.card.reject{border-color:var(--reject)}.card.hold{border-color:var(--hold)}
+  .card.keep{border-color:var(--keep)}.card.reject{border-color:var(--reject)}.card.hold{border-color:var(--hold)}.card.ai{border-color:var(--ai)}.card.gap{border-color:var(--gap)}
   .card img{width:100%;height:190px;object-fit:cover;display:block;background:#eee}
   .card figcaption{font-size:12px;padding:7px 9px;color:#444;min-height:52px}
-  .card.keep b{color:var(--keep)}.card.reject b{color:var(--reject)}.card.hold b{color:var(--hold)}
+  .card.keep b{color:var(--keep)}.card.reject b{color:var(--reject)}.card.hold b{color:var(--hold)}.card.ai b{color:#a07f00}.card.gap b{color:var(--gap)}
   #lb{position:fixed;inset:0;background:rgba(12,14,12,.93);display:none;z-index:50;flex-direction:column;align-items:center;justify-content:center;padding:24px}
   #lb.open{display:flex}#lb img{max-width:94vw;max-height:78vh;border-radius:6px;background:#000}
   #lb .meta{color:#eee;font-size:14px;margin-top:12px;max-width:900px;text-align:center}
-  #lb .meta b.k{color:#69d08a}#lb .meta b.r{color:#ff8d76}#lb .meta b.h{color:#ffce6b}
+  #lb .meta b.k{color:#69d08a}#lb .meta b.r{color:#ff8d76}#lb .meta b.h{color:#ffce6b}#lb .meta b.a{color:#ffe066}#lb .meta b.g{color:#c9a6ff}
   #lb .x{position:absolute;top:14px;right:22px;color:#fff;font-size:30px;cursor:pointer;background:none;border:0}
 </style></head><body>
 <header><h1>FMC property photo review</h1>
-<p>Internal page — August 7, 2026. Green = keeper (live or ready to publish) · Red = rejected, with the reason · Amber = needs a decision or a re-shoot. Click any photo to enlarge. Shot-list chips show coverage per property: green = covered with a current usable shot, amber = covered only by an old/small/questionable shot, red = missing.</p></header>
+<p>Internal page — August 7, 2026. Green = keeper (live or ready to publish) · Yellow = AI-detected (the app-processed files; evidence on each card) · Purple = not good enough but it’s all we’ve got (dated print scans still live on a site) · Red = rejected, with the reason · Amber = needs a decision or a re-shoot. Click any photo to enlarge. Shot-list chips show coverage per property: green = covered with a current usable shot, amber = covered only by an old/small/questionable shot, red = missing.</p></header>
 <div class="legend">
   <span><span class="sw" style="background:var(--keep)"></span>Keeper</span>
+  <span><span class="sw" style="background:var(--ai)"></span>AI-detected</span>
+  <span><span class="sw" style="background:var(--gap)"></span>All we’ve got (dated scan)</span>
   <span><span class="sw" style="background:var(--reject)"></span>Rejected (reason on the card)</span>
   <span><span class="sw" style="background:var(--hold)"></span>Needs review / re-shoot</span>
   <span style="color:#666">Sources: Dexter's 8/6 Drive folder shares, the 8/3–4 email batch (re-uploaded to Drive), and each property's live website.</span>
@@ -94,6 +96,54 @@
         <img src="img/calvertowne/t-29.jpg" loading="lazy" alt="sign.jpg">
         <figcaption><b>KEEP</b> Monument sign — the sharper of the two sign shots</figcaption>
       </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-5.jpg" data-name="Bathroom.png" data-verdict="AI-DETECTED" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
+        <img src="img/calvertowne/t-5.jpg" loading="lazy" alt="Bathroom.png">
+        <figcaption><b>AI-DETECTED</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-6.jpg" data-name="Bedroom 2.png" data-verdict="AI-DETECTED" data-reason="AI-processed (8/3–4 batch): rendered from the ~200 KB website copy of the bedroom" data-source="Drive 'Updated Marketing Pictures'">
+        <img src="img/calvertowne/t-6.jpg" loading="lazy" alt="Bedroom 2.png">
+        <figcaption><b>AI-DETECTED</b> AI-processed (8/3–4 batch): rendered from the ~200 KB website copy of the bedroom</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-7.jpg" data-name="Bedroom.jpg" data-verdict="AI-DETECTED" data-reason="AI virtual-staging render pulled back off the website (~200 KB) — replaced by the real bedroom" data-source="Drive · website re-upload">
+        <img src="img/calvertowne/t-7.jpg" loading="lazy" alt="Bedroom.jpg">
+        <figcaption><b>AI-DETECTED</b> AI virtual-staging render pulled back off the website (~200 KB) — replaced by the real bedroom</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-8.jpg" data-name="Exterior Buildings.png" data-verdict="AI-DETECTED" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
+        <img src="img/calvertowne/t-8.jpg" loading="lazy" alt="Exterior Buildings.png">
+        <figcaption><b>AI-DETECTED</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-9.jpg" data-name="Exterior.png" data-verdict="AI-DETECTED" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
+        <img src="img/calvertowne/t-9.jpg" loading="lazy" alt="Exterior.png">
+        <figcaption><b>AI-DETECTED</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-11.jpg" data-name="Kitchen 2.png" data-verdict="AI-DETECTED" data-reason="AI-processed (8/3–4 batch): rendered from the ~170 KB website copy of the kitchen, not from a camera file" data-source="Drive 'Updated Marketing Pictures'">
+        <img src="img/calvertowne/t-11.jpg" loading="lazy" alt="Kitchen 2.png">
+        <figcaption><b>AI-DETECTED</b> AI-processed (8/3–4 batch): rendered from the ~170 KB website copy of the kitchen, not from a camera file</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-12.jpg" data-name="Kitchen.jpg" data-verdict="AI-DETECTED" data-reason="AI virtual-staging render pulled back off the website (~170 KB) — was live until 8/7, now replaced by the real kitchen" data-source="Drive · website re-upload">
+        <img src="img/calvertowne/t-12.jpg" loading="lazy" alt="Kitchen.jpg">
+        <figcaption><b>AI-DETECTED</b> AI virtual-staging render pulled back off the website (~170 KB) — was live until 8/7, now replaced by the real kitchen</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-13.jpg" data-name="Living Room 3.png" data-verdict="AI-DETECTED" data-reason="AI-processed (8/3–4 batch): rendered from the ~185 KB website copy of the living room" data-source="Drive 'Updated Marketing Pictures'">
+        <img src="img/calvertowne/t-13.jpg" loading="lazy" alt="Living Room 3.png">
+        <figcaption><b>AI-DETECTED</b> AI-processed (8/3–4 batch): rendered from the ~185 KB website copy of the living room</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-14.jpg" data-name="Living Room.jpg" data-verdict="AI-DETECTED" data-reason="AI virtual-staging render pulled back off the website (~185 KB) — replaced by the real living room" data-source="Drive · website re-upload">
+        <img src="img/calvertowne/t-14.jpg" loading="lazy" alt="Living Room.jpg">
+        <figcaption><b>AI-DETECTED</b> AI virtual-staging render pulled back off the website (~185 KB) — replaced by the real living room</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-15.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
+        <img src="img/calvertowne/t-15.jpg" loading="lazy" alt="Property Sign.png">
+        <figcaption><b>AI-DETECTED</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-16.jpg" data-name="Stairwell 2.png" data-verdict="AI-DETECTED" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
+        <img src="img/calvertowne/t-16.jpg" loading="lazy" alt="Stairwell 2.png">
+        <figcaption><b>AI-DETECTED</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/calvertowne/f-17.jpg" data-name="Stairwell.png" data-verdict="AI-DETECTED" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
+        <img src="img/calvertowne/t-17.jpg" loading="lazy" alt="Stairwell.png">
+        <figcaption><b>AI-DETECTED</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
+      </figure>
       <figure class="card reject" data-full="img/calvertowne/f-1.jpg" data-name="20251015_114135.jpg" data-verdict="REJECT" data-reason="Same dining nook as the kept shot, one step to the right — adds nothing" data-source="Drive 8/6 · shot 10/2025">
         <img src="img/calvertowne/t-1.jpg" loading="lazy" alt="20251015_114135.jpg">
         <figcaption><b>REJECT</b> Same dining nook as the kept shot, one step to the right — adds nothing</figcaption>
@@ -110,57 +160,9 @@
         <img src="img/calvertowne/t-4.jpg" loading="lazy" alt="20251015_114824.jpg">
         <figcaption><b>REJECT</b> Under-stair coat closet — utilitarian</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-5.jpg" data-name="Bathroom.png" data-verdict="REJECT" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
-        <img src="img/calvertowne/t-5.jpg" loading="lazy" alt="Bathroom.png">
-        <figcaption><b>REJECT</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-6.jpg" data-name="Bedroom 2.png" data-verdict="REJECT" data-reason="AI-processed (8/3–4 batch): rendered from the ~200 KB website copy of the bedroom" data-source="Drive 'Updated Marketing Pictures'">
-        <img src="img/calvertowne/t-6.jpg" loading="lazy" alt="Bedroom 2.png">
-        <figcaption><b>REJECT</b> AI-processed (8/3–4 batch): rendered from the ~200 KB website copy of the bedroom</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-7.jpg" data-name="Bedroom.jpg" data-verdict="REJECT" data-reason="AI virtual-staging render pulled back off the website (~200 KB) — replaced by the real bedroom" data-source="Drive · website re-upload">
-        <img src="img/calvertowne/t-7.jpg" loading="lazy" alt="Bedroom.jpg">
-        <figcaption><b>REJECT</b> AI virtual-staging render pulled back off the website (~200 KB) — replaced by the real bedroom</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-8.jpg" data-name="Exterior Buildings.png" data-verdict="REJECT" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
-        <img src="img/calvertowne/t-8.jpg" loading="lazy" alt="Exterior Buildings.png">
-        <figcaption><b>REJECT</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-9.jpg" data-name="Exterior.png" data-verdict="REJECT" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
-        <img src="img/calvertowne/t-9.jpg" loading="lazy" alt="Exterior.png">
-        <figcaption><b>REJECT</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
-      </figure>
       <figure class="card reject" data-full="img/calvertowne/f-10.jpg" data-name="IMG_4426.jpeg" data-verdict="REJECT" data-reason="Near-duplicate of the kept sign shot; the other frame shows the lettering larger" data-source="Drive 8/6 · iPhone">
         <img src="img/calvertowne/t-10.jpg" loading="lazy" alt="IMG_4426.jpeg">
         <figcaption><b>REJECT</b> Near-duplicate of the kept sign shot; the other frame shows the lettering larger</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-11.jpg" data-name="Kitchen 2.png" data-verdict="REJECT" data-reason="AI-processed (8/3–4 batch): rendered from the ~170 KB website copy of the kitchen, not from a camera file" data-source="Drive 'Updated Marketing Pictures'">
-        <img src="img/calvertowne/t-11.jpg" loading="lazy" alt="Kitchen 2.png">
-        <figcaption><b>REJECT</b> AI-processed (8/3–4 batch): rendered from the ~170 KB website copy of the kitchen, not from a camera file</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-12.jpg" data-name="Kitchen.jpg" data-verdict="REJECT" data-reason="AI virtual-staging render pulled back off the website (~170 KB) — was live until 8/7, now replaced by the real kitchen" data-source="Drive · website re-upload">
-        <img src="img/calvertowne/t-12.jpg" loading="lazy" alt="Kitchen.jpg">
-        <figcaption><b>REJECT</b> AI virtual-staging render pulled back off the website (~170 KB) — was live until 8/7, now replaced by the real kitchen</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-13.jpg" data-name="Living Room 3.png" data-verdict="REJECT" data-reason="AI-processed (8/3–4 batch): rendered from the ~185 KB website copy of the living room" data-source="Drive 'Updated Marketing Pictures'">
-        <img src="img/calvertowne/t-13.jpg" loading="lazy" alt="Living Room 3.png">
-        <figcaption><b>REJECT</b> AI-processed (8/3–4 batch): rendered from the ~185 KB website copy of the living room</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-14.jpg" data-name="Living Room.jpg" data-verdict="REJECT" data-reason="AI virtual-staging render pulled back off the website (~185 KB) — replaced by the real living room" data-source="Drive · website re-upload">
-        <img src="img/calvertowne/t-14.jpg" loading="lazy" alt="Living Room.jpg">
-        <figcaption><b>REJECT</b> AI virtual-staging render pulled back off the website (~185 KB) — replaced by the real living room</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-15.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
-        <img src="img/calvertowne/t-15.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-16.jpg" data-name="Stairwell 2.png" data-verdict="REJECT" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
-        <img src="img/calvertowne/t-16.jpg" loading="lazy" alt="Stairwell 2.png">
-        <figcaption><b>REJECT</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/calvertowne/f-17.jpg" data-name="Stairwell.png" data-verdict="REJECT" data-reason="AI-processed (8/3–4 batch): PNG re-render, not a camera file" data-source="Drive 'Updated Marketing Pictures'">
-        <img src="img/calvertowne/t-17.jpg" loading="lazy" alt="Stairwell.png">
-        <figcaption><b>REJECT</b> AI-processed (8/3–4 batch): PNG re-render, not a camera file</figcaption>
       </figure></div>
     </section>
 
@@ -205,21 +207,21 @@
         <img src="img/carroll/t-4.jpg" loading="lazy" alt="IMG_2629.jpeg">
         <figcaption><b>REVIEW</b> Genuine 2856x2142 camera shot of the real entrance sign with the plaque legible at 301-934-6814, which is the authentic version of the subject the four PNGs redrew, but it is saved sideways and shot under flat overcast light; provenance is unverified, confirm it is current and re-send the full roll.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/carroll/f-1.jpg" data-name="CLV Walkway to the Office.png" data-verdict="REJECT" data-reason="AI render at 1086x1448, and the doormat at the office door is covered in pseudo-script that never forms words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/carroll/f-1.jpg" data-name="CLV Walkway to the Office.png" data-verdict="AI-DETECTED" data-reason="AI render at 1086x1448, and the doormat at the office door is covered in pseudo-script that never forms words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/carroll/t-1.jpg" loading="lazy" alt="CLV Walkway to the Office.png">
-        <figcaption><b>REJECT</b> AI render at 1086x1448, and the doormat at the office door is covered in pseudo-script that never forms words.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI render at 1086x1448, and the doormat at the office door is covered in pseudo-script that never forms words.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/carroll/f-5.jpg" data-name="Property Sign 1.png" data-verdict="REJECT" data-reason="AI render of the same sign minutes later at 1086x1448, and the Rental Office plaque breaks down after &quot;TTY&quot; into an unreadable smear instead of the 711 number." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/carroll/f-5.jpg" data-name="Property Sign 1.png" data-verdict="AI-DETECTED" data-reason="AI render of the same sign minutes later at 1086x1448, and the Rental Office plaque breaks down after &quot;TTY&quot; into an unreadable smear instead of the 711 number." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/carroll/t-5.jpg" loading="lazy" alt="Property Sign 1.png">
-        <figcaption><b>REJECT</b> AI render of the same sign minutes later at 1086x1448, and the Rental Office plaque breaks down after &quot;TTY&quot; into an unreadable smear instead of the 711 number.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI render of the same sign minutes later at 1086x1448, and the Rental Office plaque breaks down after &quot;TTY&quot; into an unreadable smear instead of the 711 number.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/carroll/f-6.jpg" data-name="Property Sign _ Playground.png" data-verdict="REJECT" data-reason="AI render at 1448x1086, and the playground at right dissolves into incoherent shapes while the lamp post beside it has no base and floats above the grass." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/carroll/f-6.jpg" data-name="Property Sign _ Playground.png" data-verdict="AI-DETECTED" data-reason="AI render at 1448x1086, and the playground at right dissolves into incoherent shapes while the lamp post beside it has no base and floats above the grass." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/carroll/t-6.jpg" loading="lazy" alt="Property Sign _ Playground.png">
-        <figcaption><b>REJECT</b> AI render at 1448x1086, and the playground at right dissolves into incoherent shapes while the lamp post beside it has no base and floats above the grass.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI render at 1448x1086, and the playground at right dissolves into incoherent shapes while the lamp post beside it has no base and floats above the grass.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/carroll/f-7.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="AI render at 1086x1448 with a synthesized golden-hour sky and a warm cream tint applied across the whole sign face, which is white in every real photo of it." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/carroll/f-7.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="AI render at 1086x1448 with a synthesized golden-hour sky and a warm cream tint applied across the whole sign face, which is white in every real photo of it." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/carroll/t-7.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> AI render at 1086x1448 with a synthesized golden-hour sky and a warm cream tint applied across the whole sign face, which is white in every real photo of it.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI render at 1086x1448 with a synthesized golden-hour sky and a warm cream tint applied across the whole sign face, which is white in every real photo of it.</figcaption>
       </figure></div>
     </section>
 
@@ -327,9 +329,13 @@
         <img src="img/ihe/t-19.jpg" loading="lazy" alt="Office 2.jpeg">
         <figcaption><b>REVIEW</b> Second angle of the same office and equally real looking, with the same 8/3 timestamp to confirm as an unedited original and the same 90 degree rotation to correct before use.</figcaption>
       </figure>
-      <figure class="card hold" data-full="img/ihe/f-20.jpg" data-name="Office.jpeg" data-verdict="REVIEW" data-reason="Reads as a genuine unedited photo of the leasing office, with natural cable clutter and wall-art text that stays legible under magnification, but it carries an 8/3 timestamp inside the AI batch window and is stored rotated 90 degrees." data-source="Drive folder (shared 8/6)">
+      <figure class="card ai" data-full="img/ihe/f-20.jpg" data-name="Office.jpeg" data-verdict="AI-DETECTED" data-reason="Reads as a genuine unedited photo of the leasing office, with natural cable clutter and wall-art text that stays legible under magnification, but it carries an 8/3 timestamp inside the AI batch window and is stored rotated 90 degrees." data-source="Drive folder (shared 8/6)">
         <img src="img/ihe/t-20.jpg" loading="lazy" alt="Office.jpeg">
-        <figcaption><b>REVIEW</b> Reads as a genuine unedited photo of the leasing office, with natural cable clutter and wall-art text that stays legible under magnification, but it carries an 8/3 timestamp inside the AI batch window and is stored rotated 90 degrees.</figcaption>
+        <figcaption><b>AI-DETECTED</b> Reads as a genuine unedited photo of the leasing office, with natural cable clutter and wall-art text that stays legible under magnification, but it carries an 8/3 timestamp inside the AI batch window and is stored rotated 90 degrees.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/ihe/f-21.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="1122x1402 PNG matching the 8/3-4 processed batch, and the sign in frame reads Indian Head Village, which is the neighboring family property rather than Indian Head Elderly." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/ihe/t-21.jpg" loading="lazy" alt="Property Sign.png">
+        <figcaption><b>AI-DETECTED</b> 1122x1402 PNG matching the 8/3-4 processed batch, and the sign in frame reads Indian Head Village, which is the neighboring family property rather than Indian Head Elderly.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/ihe/f-1.jpg" data-name="20250722_145927.jpg" data-verdict="REJECT" data-reason="Bedroom, badly underexposed — walls and carpet read near-black" data-source="Drive 8/6 · shot 7/2025">
         <img src="img/ihe/t-1.jpg" loading="lazy" alt="20250722_145927.jpg">
@@ -402,10 +408,6 @@
       <figure class="card reject" data-full="img/ihe/f-18.jpg" data-name="IMG_1375.jpeg" data-verdict="REJECT" data-reason="320x240 website-resolution copy at ~57 KB of the meeting room with the elephant canvas art, so a full-size re-send is requested." data-source="Drive - website re-download">
         <img src="img/ihe/t-18.jpg" loading="lazy" alt="IMG_1375.jpeg">
         <figcaption><b>REJECT</b> 320x240 website-resolution copy at ~57 KB of the meeting room with the elephant canvas art, so a full-size re-send is requested.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/ihe/f-21.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="1122x1402 PNG matching the 8/3-4 processed batch, and the sign in frame reads Indian Head Village, which is the neighboring family property rather than Indian Head Elderly." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/ihe/t-21.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> 1122x1402 PNG matching the 8/3-4 processed batch, and the sign in frame reads Indian Head Village, which is the neighboring family property rather than Indian Head Elderly.</figcaption>
       </figure></div>
     </section>
 
@@ -589,6 +591,14 @@
         <img src="img/kentisland/t-2.jpg" loading="lazy" alt="20260728_115419.jpg">
         <figcaption><b>REVIEW</b> Real 4000x3000 camera frame of the freshly repainted bench, but it also shows a usable stretch of lawn, mature evergreens and an ornamental shrub bed, so it could work as a grounds shot if it is rotated 90 degrees and cropped away from the bench.</figcaption>
       </figure>
+      <figure class="card ai" data-full="img/kentisland/f-6.jpg" data-name="Kent Island Sign.png" data-verdict="AI-DETECTED" data-reason="AI-redrawn entrance sign at the batch's 1086x1448 PNG size, and the green street-name blades behind the brick pier read as pseudo-lettering (&quot;5MLA R&quot; and &quot;WAr&quot;) instead of real street names." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/kentisland/t-6.jpg" loading="lazy" alt="Kent Island Sign.png">
+        <figcaption><b>AI-DETECTED</b> AI-redrawn entrance sign at the batch's 1086x1448 PNG size, and the green street-name blades behind the brick pier read as pseudo-lettering (&quot;5MLA R&quot; and &quot;WAr&quot;) instead of real street names.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/kentisland/f-12.jpg" data-name="Playground.png" data-verdict="AI-DETECTED" data-reason="AI render at 1024x1024, with the foreground lawn painted as a flat synthetic carpet that meets the mulch on a hard straight seam and the spring rider reduced to an unresolved chrome blob." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/kentisland/t-12.jpg" loading="lazy" alt="Playground.png">
+        <figcaption><b>AI-DETECTED</b> AI render at 1024x1024, with the foreground lawn painted as a flat synthetic carpet that meets the mulch on a hard straight seam and the spring rider reduced to an unresolved chrome blob.</figcaption>
+      </figure>
       <figure class="card reject" data-full="img/kentisland/f-1.jpg" data-name="20260728_114541.jpg" data-verdict="REJECT" data-reason="Real camera frame but it is maintenance documentation, not marketing material: the repainted bench fills the frame and the background is a gravel strip and the rear of a building." data-source="Drive '1. Photos' folder (shared 8/6)">
         <img src="img/kentisland/t-1.jpg" loading="lazy" alt="20260728_114541.jpg">
         <figcaption><b>REJECT</b> Real camera frame but it is maintenance documentation, not marketing material: the repainted bench fills the frame and the background is a gravel strip and the rear of a building.</figcaption>
@@ -604,10 +614,6 @@
       <figure class="card reject" data-full="img/kentisland/f-5.jpg" data-name="Exterior _Outside.jpg" data-verdict="REJECT" data-reason="~318 KB website copy at 1238x825, and the roof shingles and siding are rendered without texture, so this is a reduced copy of an already-processed image." data-source="Drive - website re-download">
         <img src="img/kentisland/t-5.jpg" loading="lazy" alt="Exterior _Outside.jpg">
         <figcaption><b>REJECT</b> ~318 KB website copy at 1238x825, and the roof shingles and siding are rendered without texture, so this is a reduced copy of an already-processed image.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/kentisland/f-6.jpg" data-name="Kent Island Sign.png" data-verdict="REJECT" data-reason="AI-redrawn entrance sign at the batch's 1086x1448 PNG size, and the green street-name blades behind the brick pier read as pseudo-lettering (&quot;5MLA R&quot; and &quot;WAr&quot;) instead of real street names." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/kentisland/t-6.jpg" loading="lazy" alt="Kent Island Sign.png">
-        <figcaption><b>REJECT</b> AI-redrawn entrance sign at the batch's 1086x1448 PNG size, and the green street-name blades behind the brick pier read as pseudo-lettering (&quot;5MLA R&quot; and &quot;WAr&quot;) instead of real street names.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/kentisland/f-7.jpg" data-name="Kitchen.jpg" data-verdict="REJECT" data-reason="~221 KB website copy at 1108x766, too small for marketing use." data-source="Drive - website re-download">
         <img src="img/kentisland/t-7.jpg" loading="lazy" alt="Kitchen.jpg">
@@ -628,10 +634,6 @@
       <figure class="card reject" data-full="img/kentisland/f-11.jpg" data-name="Playground 2.jpg" data-verdict="REJECT" data-reason="~299 KB website copy at 1076x717, too small to reuse." data-source="Drive - website re-download">
         <img src="img/kentisland/t-11.jpg" loading="lazy" alt="Playground 2.jpg">
         <figcaption><b>REJECT</b> ~299 KB website copy at 1076x717, too small to reuse.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/kentisland/f-12.jpg" data-name="Playground.png" data-verdict="REJECT" data-reason="AI render at 1024x1024, with the foreground lawn painted as a flat synthetic carpet that meets the mulch on a hard straight seam and the spring rider reduced to an unresolved chrome blob." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/kentisland/t-12.jpg" loading="lazy" alt="Playground.png">
-        <figcaption><b>REJECT</b> AI render at 1024x1024, with the foreground lawn painted as a flat synthetic carpet that meets the mulch on a hard straight seam and the spring rider reduced to an unresolved chrome blob.</figcaption>
       </figure></div>
     </section>
 
@@ -680,13 +682,13 @@
         <img src="img/leonardsfreehold/t-13.jpg" loading="lazy" alt="sign-2.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
       </figure>
+      <figure class="card ai" data-full="img/leonardsfreehold/f-5.jpg" data-name="Kitchen.png" data-verdict="AI-DETECTED" data-reason="AI render carrying the app's generic filename and 1024x1024 output size, and the cooktop shows three burner rings of mismatched size with no matching controls on the range." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/leonardsfreehold/t-5.jpg" loading="lazy" alt="Kitchen.png">
+        <figcaption><b>AI-DETECTED</b> AI render carrying the app's generic filename and 1024x1024 output size, and the cooktop shows three burner rings of mismatched size with no matching controls on the range.</figcaption>
+      </figure>
       <figure class="card reject" data-full="img/leonardsfreehold/f-4.jpg" data-name="Bedroom.jpg" data-verdict="REJECT" data-reason="~149 KB website copy at 713x756, too small to reuse." data-source="Drive - website re-download">
         <img src="img/leonardsfreehold/t-4.jpg" loading="lazy" alt="Bedroom.jpg">
         <figcaption><b>REJECT</b> ~149 KB website copy at 713x756, too small to reuse.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardsfreehold/f-5.jpg" data-name="Kitchen.png" data-verdict="REJECT" data-reason="AI render carrying the app's generic filename and 1024x1024 output size, and the cooktop shows three burner rings of mismatched size with no matching controls on the range." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/leonardsfreehold/t-5.jpg" loading="lazy" alt="Kitchen.png">
-        <figcaption><b>REJECT</b> AI render carrying the app's generic filename and 1024x1024 output size, and the cooktop shows three burner rings of mismatched size with no matching controls on the range.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/leonardsfreehold/f-6.jpg" data-name="Living Room.jpg" data-verdict="REJECT" data-reason="~216 KB website copy at 1104x807, too small for marketing use, and it shows staged furniture that is not in the unit." data-source="Drive - website re-download">
         <img src="img/leonardsfreehold/t-6.jpg" loading="lazy" alt="Living Room.jpg">
@@ -751,69 +753,69 @@
         <img src="img/leonardtown/t-9.jpg" loading="lazy" alt="Coming down the Stairs.jpeg">
         <figcaption><b>REVIEW</b> Reads as a genuine phone photo of a bare stairwell, but it is stored rotated 90 degrees and the frame is mostly empty wall, so it needs rotating and a second look before use.</figcaption>
       </figure>
-      <figure class="card hold" data-full="img/leonardtown/f-13.jpg" data-name="Kitchen counter top.jpeg" data-verdict="REVIEW" data-reason="Second angle on the same vacant kitchen with no visible AI tells, so it is a possible camera original from the 8/3 session and worth confirming provenance before use." data-source="Drive '1. Photos' folder (shared 8/6)">
-        <img src="img/leonardtown/t-13.jpg" loading="lazy" alt="Kitchen counter top.jpeg">
-        <figcaption><b>REVIEW</b> Second angle on the same vacant kitchen with no visible AI tells, so it is a possible camera original from the 8/3 session and worth confirming provenance before use.</figcaption>
-      </figure>
       <figure class="card hold" data-full="img/leonardtown/f-14.jpg" data-name="Kitchen.jpeg" data-verdict="REVIEW" data-reason="Looks like a straight phone photo of a vacant kitchen with consistent shadows and legible appliance branding, so it is a possible camera original from the 8/3 session and worth confirming provenance before use." data-source="Drive '1. Photos' folder (shared 8/6)">
         <img src="img/leonardtown/t-14.jpg" loading="lazy" alt="Kitchen.jpeg">
         <figcaption><b>REVIEW</b> Looks like a straight phone photo of a vacant kitchen with consistent shadows and legible appliance branding, so it is a possible camera original from the 8/3 session and worth confirming provenance before use.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-6.jpg" data-name="Bathoom 2.png" data-verdict="REJECT" data-reason="AI staging that adds towels, a bath mat, potted plants and framed art to a vacant bathroom, and the mirror reflects a towel bar that does not exist in the room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/leonardtown/f-6.jpg" data-name="Bathoom 2.png" data-verdict="AI-DETECTED" data-reason="AI staging that adds towels, a bath mat, potted plants and framed art to a vacant bathroom, and the mirror reflects a towel bar that does not exist in the room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/leonardtown/t-6.jpg" loading="lazy" alt="Bathoom 2.png">
-        <figcaption><b>REJECT</b> AI staging that adds towels, a bath mat, potted plants and framed art to a vacant bathroom, and the mirror reflects a towel bar that does not exist in the room.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging that adds towels, a bath mat, potted plants and framed art to a vacant bathroom, and the mirror reflects a towel bar that does not exist in the room.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-8.jpg" data-name="Bedroom.png" data-verdict="AI-DETECTED" data-reason="AI staging that furnishes a vacant bedroom with an invented bed, nightstands, rug and artwork, and it is currently published on the site as the bedroom photo." data-source="Drive 'Updated Marketing Pictures' (7/13 conversion)">
+        <img src="img/leonardtown/t-8.jpg" loading="lazy" alt="Bedroom.png">
+        <figcaption><b>AI-DETECTED</b> AI staging that furnishes a vacant bedroom with an invented bed, nightstands, rug and artwork, and it is currently published on the site as the bedroom photo.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-10.jpg" data-name="Exterior Building Picture.png" data-verdict="AI-DETECTED" data-reason="AI redraw with hand-drawn looking door numerals and a coach lamp whose backplate dissolves into a smear on the siding." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/leonardtown/t-10.jpg" loading="lazy" alt="Exterior Building Picture.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw with hand-drawn looking door numerals and a coach lamp whose backplate dissolves into a smear on the siding.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-11.jpg" data-name="Exterior Buildings.png" data-verdict="AI-DETECTED" data-reason="AI redraw in which the address plaque between the upstairs windows is a blob of pseudo-lettering with no readable numerals." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/leonardtown/t-11.jpg" loading="lazy" alt="Exterior Buildings.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw in which the address plaque between the upstairs windows is a blob of pseudo-lettering with no readable numerals.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-12.jpg" data-name="Exterior picture.png" data-verdict="AI-DETECTED" data-reason="AI redraw in which the coach lamp melts into the siding and the lantern glass is filled with a brown blob instead of a bulb." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/leonardtown/t-12.jpg" loading="lazy" alt="Exterior picture.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw in which the coach lamp melts into the siding and the lantern glass is filled with a brown blob instead of a bulb.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-13.jpg" data-name="Kitchen counter top.jpeg" data-verdict="AI-DETECTED" data-reason="Second angle on the same vacant kitchen with no visible AI tells, so it is a possible camera original from the 8/3 session and worth confirming provenance before use." data-source="Drive '1. Photos' folder (shared 8/6)">
+        <img src="img/leonardtown/t-13.jpg" loading="lazy" alt="Kitchen counter top.jpeg">
+        <figcaption><b>AI-DETECTED</b> Second angle on the same vacant kitchen with no visible AI tells, so it is a possible camera original from the 8/3 session and worth confirming provenance before use.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-15.jpg" data-name="Kitchen.png" data-verdict="AI-DETECTED" data-reason="AI redraw that changes the real arched oak cabinets to flat panels and the brown laminate counter to dark stone, and it is currently published on the site as the kitchen photo." data-source="Drive 'Updated Marketing Pictures' (7/13 conversion)">
+        <img src="img/leonardtown/t-15.jpg" loading="lazy" alt="Kitchen.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw that changes the real arched oak cabinets to flat panels and the brown laminate counter to dark stone, and it is currently published on the site as the kitchen photo.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-17.jpg" data-name="Living Room 1.png" data-verdict="AI-DETECTED" data-reason="AI staging that fills a vacant living room with an invented sofa, armchair, coffee table, rug, television and wall art." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/leonardtown/t-17.jpg" loading="lazy" alt="Living Room 1.png">
+        <figcaption><b>AI-DETECTED</b> AI staging that fills a vacant living room with an invented sofa, armchair, coffee table, rug, television and wall art.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-18.jpg" data-name="Living Room 2.png" data-verdict="AI-DETECTED" data-reason="AI staging with invented furniture and curtains, and the ceiling texture is redrawn as a swirling stucco pattern rather than the real popcorn finish." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/leonardtown/t-18.jpg" loading="lazy" alt="Living Room 2.png">
+        <figcaption><b>AI-DETECTED</b> AI staging with invented furniture and curtains, and the ceiling texture is redrawn as a swirling stucco pattern rather than the real popcorn finish.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-20.jpg" data-name="Outside of Office.png" data-verdict="AI-DETECTED" data-reason="AI redraw in which the street name on the address plaque and the notices in the office window are smears of pseudo-letters with no readable words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/leonardtown/t-20.jpg" loading="lazy" alt="Outside of Office.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw in which the street name on the address plaque and the notices in the office window are smears of pseudo-letters with no readable words.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-21.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="AI redraw of the July 10 sign photo that invents the words Equal Housing Opportunity under the icon, which the real sign does not carry, and replants the bed with rows of flowers that are not there." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/leonardtown/t-21.jpg" loading="lazy" alt="Property Sign.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of the July 10 sign photo that invents the words Equal Housing Opportunity under the icon, which the real sign does not carry, and replants the bed with rows of flowers that are not there.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-23.jpg" data-name="bedroom.jpg" data-verdict="AI-DETECTED" data-reason="LIVE ON THE SITE but identified 8/7 as an AI conversion of the real bedroom shot. Replace with a real photo." data-source="Live website">
+        <img src="img/leonardtown/t-23.jpg" loading="lazy" alt="bedroom.jpg">
+        <figcaption><b>AI-DETECTED</b> LIVE ON THE SITE but identified 8/7 as an AI conversion of the real bedroom shot. Replace with a real photo.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/leonardtown/f-26.jpg" data-name="kitchen.jpg" data-verdict="AI-DETECTED" data-reason="LIVE ON THE SITE but identified 8/7 as an AI conversion: the arched oak cabinets were redrawn as flat panels and the counter changed to dark stone. Replace with a real photo." data-source="Live website">
+        <img src="img/leonardtown/t-26.jpg" loading="lazy" alt="kitchen.jpg">
+        <figcaption><b>AI-DETECTED</b> LIVE ON THE SITE but identified 8/7 as an AI conversion: the arched oak cabinets were redrawn as flat panels and the counter changed to dark stone. Replace with a real photo.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/leonardtown/f-7.jpg" data-name="Bathroom.jpg" data-verdict="REJECT" data-reason="A roughly 136 KB website copy at 729 by 866, matching the bathroom image already on the site pixel for pixel." data-source="Drive 'Updated Marketing Pictures' - website re-download">
         <img src="img/leonardtown/t-7.jpg" loading="lazy" alt="Bathroom.jpg">
         <figcaption><b>REJECT</b> A roughly 136 KB website copy at 729 by 866, matching the bathroom image already on the site pixel for pixel.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-8.jpg" data-name="Bedroom.png" data-verdict="REJECT" data-reason="AI staging that furnishes a vacant bedroom with an invented bed, nightstands, rug and artwork, and it is currently published on the site as the bedroom photo." data-source="Drive 'Updated Marketing Pictures' (7/13 conversion)">
-        <img src="img/leonardtown/t-8.jpg" loading="lazy" alt="Bedroom.png">
-        <figcaption><b>REJECT</b> AI staging that furnishes a vacant bedroom with an invented bed, nightstands, rug and artwork, and it is currently published on the site as the bedroom photo.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-10.jpg" data-name="Exterior Building Picture.png" data-verdict="REJECT" data-reason="AI redraw with hand-drawn looking door numerals and a coach lamp whose backplate dissolves into a smear on the siding." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/leonardtown/t-10.jpg" loading="lazy" alt="Exterior Building Picture.png">
-        <figcaption><b>REJECT</b> AI redraw with hand-drawn looking door numerals and a coach lamp whose backplate dissolves into a smear on the siding.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-11.jpg" data-name="Exterior Buildings.png" data-verdict="REJECT" data-reason="AI redraw in which the address plaque between the upstairs windows is a blob of pseudo-lettering with no readable numerals." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/leonardtown/t-11.jpg" loading="lazy" alt="Exterior Buildings.png">
-        <figcaption><b>REJECT</b> AI redraw in which the address plaque between the upstairs windows is a blob of pseudo-lettering with no readable numerals.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-12.jpg" data-name="Exterior picture.png" data-verdict="REJECT" data-reason="AI redraw in which the coach lamp melts into the siding and the lantern glass is filled with a brown blob instead of a bulb." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/leonardtown/t-12.jpg" loading="lazy" alt="Exterior picture.png">
-        <figcaption><b>REJECT</b> AI redraw in which the coach lamp melts into the siding and the lantern glass is filled with a brown blob instead of a bulb.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-15.jpg" data-name="Kitchen.png" data-verdict="REJECT" data-reason="AI redraw that changes the real arched oak cabinets to flat panels and the brown laminate counter to dark stone, and it is currently published on the site as the kitchen photo." data-source="Drive 'Updated Marketing Pictures' (7/13 conversion)">
-        <img src="img/leonardtown/t-15.jpg" loading="lazy" alt="Kitchen.png">
-        <figcaption><b>REJECT</b> AI redraw that changes the real arched oak cabinets to flat panels and the brown laminate counter to dark stone, and it is currently published on the site as the kitchen photo.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-17.jpg" data-name="Living Room 1.png" data-verdict="REJECT" data-reason="AI staging that fills a vacant living room with an invented sofa, armchair, coffee table, rug, television and wall art." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/leonardtown/t-17.jpg" loading="lazy" alt="Living Room 1.png">
-        <figcaption><b>REJECT</b> AI staging that fills a vacant living room with an invented sofa, armchair, coffee table, rug, television and wall art.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-18.jpg" data-name="Living Room 2.png" data-verdict="REJECT" data-reason="AI staging with invented furniture and curtains, and the ceiling texture is redrawn as a swirling stucco pattern rather than the real popcorn finish." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/leonardtown/t-18.jpg" loading="lazy" alt="Living Room 2.png">
-        <figcaption><b>REJECT</b> AI staging with invented furniture and curtains, and the ceiling texture is redrawn as a swirling stucco pattern rather than the real popcorn finish.</figcaption>
-      </figure>
       <figure class="card reject" data-full="img/leonardtown/f-19.jpg" data-name="Living Room.jpg" data-verdict="REJECT" data-reason="A roughly 162 KB website copy at 904 by 685, matching the living room image already on the site pixel for pixel." data-source="Drive 'Updated Marketing Pictures' - website re-download">
         <img src="img/leonardtown/t-19.jpg" loading="lazy" alt="Living Room.jpg">
         <figcaption><b>REJECT</b> A roughly 162 KB website copy at 904 by 685, matching the living room image already on the site pixel for pixel.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-20.jpg" data-name="Outside of Office.png" data-verdict="REJECT" data-reason="AI redraw in which the street name on the address plaque and the notices in the office window are smears of pseudo-letters with no readable words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/leonardtown/t-20.jpg" loading="lazy" alt="Outside of Office.png">
-        <figcaption><b>REJECT</b> AI redraw in which the street name on the address plaque and the notices in the office window are smears of pseudo-letters with no readable words.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-21.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="AI redraw of the July 10 sign photo that invents the words Equal Housing Opportunity under the icon, which the real sign does not carry, and replants the bed with rows of flowers that are not there." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/leonardtown/t-21.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> AI redraw of the July 10 sign photo that invents the words Equal Housing Opportunity under the icon, which the real sign does not carry, and replants the bed with rows of flowers that are not there.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-23.jpg" data-name="bedroom.jpg" data-verdict="REJECT" data-reason="LIVE ON THE SITE but identified 8/7 as an AI conversion of the real bedroom shot. Replace with a real photo." data-source="Live website">
-        <img src="img/leonardtown/t-23.jpg" loading="lazy" alt="bedroom.jpg">
-        <figcaption><b>REJECT</b> LIVE ON THE SITE but identified 8/7 as an AI conversion of the real bedroom shot. Replace with a real photo.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/leonardtown/f-26.jpg" data-name="kitchen.jpg" data-verdict="REJECT" data-reason="LIVE ON THE SITE but identified 8/7 as an AI conversion: the arched oak cabinets were redrawn as flat panels and the counter changed to dark stone. Replace with a real photo." data-source="Live website">
-        <img src="img/leonardtown/t-26.jpg" loading="lazy" alt="kitchen.jpg">
-        <figcaption><b>REJECT</b> LIVE ON THE SITE but identified 8/7 as an AI conversion: the arched oak cabinets were redrawn as flat panels and the counter changed to dark stone. Replace with a real photo.</figcaption>
       </figure></div>
     </section>
 
@@ -822,33 +824,33 @@
       <p class="propnote">Dexter's note: 'they need more pictures.' The Drive folder held one keeper — the full-resolution entrance-sign original, swapped into the live site 8/7 — plus 15 National Night Out candids (not shown here; residents pictured, consent needed). Everything else on the site is still pre-renovation scans.</p>
       <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip red" title="Homepage banner is an old scan; fresh photo is the top need">Building front</span><span class="chip green" title="Upgraded to the full-size original 8/7">Entrance sign</span><span class="chip red" title="Missing">Playground</span><span class="chip red" title="Missing">Kitchen</span><span class="chip red" title="Missing">Living room</span><span class="chip red" title="Missing">Bedroom</span><span class="chip red" title="Missing">Bathroom</span><span class="chip red" title="Missing">Laundry room</span><span class="chip red" title="Missing">Office entrance</span></div>
       <div class="grid">
-      <figure class="card keep" data-full="img/lexington/f-1.jpg" data-name="exterior-2.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/lexington/t-1.jpg" loading="lazy" alt="exterior-2.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/lexington/f-2.jpg" data-name="exterior-3.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/lexington/t-2.jpg" loading="lazy" alt="exterior-3.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/lexington/f-3.jpg" data-name="exterior-4.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/lexington/t-3.jpg" loading="lazy" alt="exterior-4.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/lexington/f-4.jpg" data-name="exterior-5.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/lexington/t-4.jpg" loading="lazy" alt="exterior-5.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/lexington/f-5.jpg" data-name="hero.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/lexington/t-5.jpg" loading="lazy" alt="hero.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/lexington/f-6.jpg" data-name="playground.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/lexington/t-6.jpg" loading="lazy" alt="playground.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
       <figure class="card keep" data-full="img/lexington/f-7.jpg" data-name="sign-2.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
         <img src="img/lexington/t-7.jpg" loading="lazy" alt="sign-2.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/lexington/f-1.jpg" data-name="exterior-2.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/lexington/t-1.jpg" loading="lazy" alt="exterior-2.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/lexington/f-2.jpg" data-name="exterior-3.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/lexington/t-2.jpg" loading="lazy" alt="exterior-3.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/lexington/f-3.jpg" data-name="exterior-4.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/lexington/t-3.jpg" loading="lazy" alt="exterior-4.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/lexington/f-4.jpg" data-name="exterior-5.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/lexington/t-4.jpg" loading="lazy" alt="exterior-5.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/lexington/f-5.jpg" data-name="hero.jpg" data-verdict="ALL WE’VE GOT" data-reason="Homepage banner is a pre-renovation print scan. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/lexington/t-5.jpg" loading="lazy" alt="hero.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Homepage banner is a pre-renovation print scan. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/lexington/f-6.jpg" data-name="playground.jpg" data-verdict="ALL WE’VE GOT" data-reason="Playground shot is a dated print scan. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/lexington/t-6.jpg" loading="lazy" alt="playground.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Playground shot is a dated print scan. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
       </figure></div>
     </section>
 
@@ -917,13 +919,29 @@
         <img src="img/pineview/t-14.jpg" loading="lazy" alt="Sign.jpg">
         <figcaption><b>REVIEW</b> Real photo at full 3691x2768 resolution, but it covers the same sign as the file above and the bare mulch bed fills most of the frame, so use it only if a wider approach view is wanted.</figcaption>
       </figure>
+      <figure class="card ai" data-full="img/pineview/f-2.jpg" data-name="Bathroom.png" data-verdict="AI-DETECTED" data-reason="AI render at 1086x1448, and the mirror reflects a grab bar and a second towel bar that do not exist anywhere in the room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/pineview/t-2.jpg" loading="lazy" alt="Bathroom.png">
+        <figcaption><b>AI-DETECTED</b> AI render at 1086x1448, and the mirror reflects a grab bar and a second towel bar that do not exist anywhere in the room.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/pineview/f-5.jpg" data-name="Bedroom 2.png" data-verdict="AI-DETECTED" data-reason="AI render at 1086x1448 showing crown molding, a designer headboard and layered bedding that do not match the actual Pineview units." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/pineview/t-5.jpg" loading="lazy" alt="Bedroom 2.png">
+        <figcaption><b>AI-DETECTED</b> AI render at 1086x1448 showing crown molding, a designer headboard and layered bedding that do not match the actual Pineview units.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/pineview/f-6.jpg" data-name="Bedroom 3.png" data-verdict="AI-DETECTED" data-reason="AI render at 1448x1086 of a room with no source photo anywhere in the folders, so the space is invented, and it shows a wall-mounted TV and media console rather than a bedroom." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/pineview/t-6.jpg" loading="lazy" alt="Bedroom 3.png">
+        <figcaption><b>AI-DETECTED</b> AI render at 1448x1086 of a room with no source photo anywhere in the folders, so the space is invented, and it shows a wall-mounted TV and media console rather than a bedroom.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/pineview/f-7.jpg" data-name="Bedroom 4.png" data-verdict="AI-DETECTED" data-reason="AI render at 1086x1448 of a room with no source photo anywhere in the folders, so the space is invented, and the window blind behind the sheers has green foliage printed onto the slats." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/pineview/t-7.jpg" loading="lazy" alt="Bedroom 4.png">
+        <figcaption><b>AI-DETECTED</b> AI render at 1086x1448 of a room with no source photo anywhere in the folders, so the space is invented, and the window blind behind the sheers has green foliage printed onto the slats.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/pineview/f-13.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="AI-redrawn entrance sign at 1086x1448, and the Rental Office plaque reads &quot;Phone: 307-638-1800 | TTY:: 711&quot; when the real plaque reads 301-638-1800 with a single colon." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/pineview/t-13.jpg" loading="lazy" alt="Property Sign.png">
+        <figcaption><b>AI-DETECTED</b> AI-redrawn entrance sign at 1086x1448, and the Rental Office plaque reads &quot;Phone: 307-638-1800 | TTY:: 711&quot; when the real plaque reads 301-638-1800 with a single colon.</figcaption>
+      </figure>
       <figure class="card reject" data-full="img/pineview/f-1.jpg" data-name="Bathroom.jpg" data-verdict="REJECT" data-reason="~116 KB website copy at 685x731, too small to reuse." data-source="Drive - website re-download">
         <img src="img/pineview/t-1.jpg" loading="lazy" alt="Bathroom.jpg">
         <figcaption><b>REJECT</b> ~116 KB website copy at 685x731, too small to reuse.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/pineview/f-2.jpg" data-name="Bathroom.png" data-verdict="REJECT" data-reason="AI render at 1086x1448, and the mirror reflects a grab bar and a second towel bar that do not exist anywhere in the room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/pineview/t-2.jpg" loading="lazy" alt="Bathroom.png">
-        <figcaption><b>REJECT</b> AI render at 1086x1448, and the mirror reflects a grab bar and a second towel bar that do not exist anywhere in the room.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/pineview/f-3.jpg" data-name="Bedroom 1.jpg" data-verdict="REJECT" data-reason="~101 KB website copy at 621x692, the smallest file in the set and unusable at any real display size." data-source="Drive - website re-download">
         <img src="img/pineview/t-3.jpg" loading="lazy" alt="Bedroom 1.jpg">
@@ -932,18 +950,6 @@
       <figure class="card reject" data-full="img/pineview/f-4.jpg" data-name="Bedroom 2.jpg" data-verdict="REJECT" data-reason="~283 KB website copy at 1402x935, too small for print or a full-width web hero." data-source="Drive - website re-download">
         <img src="img/pineview/t-4.jpg" loading="lazy" alt="Bedroom 2.jpg">
         <figcaption><b>REJECT</b> ~283 KB website copy at 1402x935, too small for print or a full-width web hero.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/pineview/f-5.jpg" data-name="Bedroom 2.png" data-verdict="REJECT" data-reason="AI render at 1086x1448 showing crown molding, a designer headboard and layered bedding that do not match the actual Pineview units." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/pineview/t-5.jpg" loading="lazy" alt="Bedroom 2.png">
-        <figcaption><b>REJECT</b> AI render at 1086x1448 showing crown molding, a designer headboard and layered bedding that do not match the actual Pineview units.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/pineview/f-6.jpg" data-name="Bedroom 3.png" data-verdict="REJECT" data-reason="AI render at 1448x1086 of a room with no source photo anywhere in the folders, so the space is invented, and it shows a wall-mounted TV and media console rather than a bedroom." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/pineview/t-6.jpg" loading="lazy" alt="Bedroom 3.png">
-        <figcaption><b>REJECT</b> AI render at 1448x1086 of a room with no source photo anywhere in the folders, so the space is invented, and it shows a wall-mounted TV and media console rather than a bedroom.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/pineview/f-7.jpg" data-name="Bedroom 4.png" data-verdict="REJECT" data-reason="AI render at 1086x1448 of a room with no source photo anywhere in the folders, so the space is invented, and the window blind behind the sheers has green foliage printed onto the slats." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/pineview/t-7.jpg" loading="lazy" alt="Bedroom 4.png">
-        <figcaption><b>REJECT</b> AI render at 1086x1448 of a room with no source photo anywhere in the folders, so the space is invented, and the window blind behind the sheers has green foliage printed onto the slats.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/pineview/f-8.jpg" data-name="Kitchen.jpg" data-verdict="REJECT" data-reason="~152 KB website copy at 939x729, and it shows a dark-cabinet kitchen with an island that does not match the current unit stock." data-source="Drive - website re-download">
         <img src="img/pineview/t-8.jpg" loading="lazy" alt="Kitchen.jpg">
@@ -960,10 +966,6 @@
       <figure class="card reject" data-full="img/pineview/f-11.jpg" data-name="PV Sign.jpg" data-verdict="REJECT" data-reason="Third shot of the same entrance sign, reduced to 1531x1148 and with heavy dappled shade falling across the sign face." data-source="Drive '1. Photos' folder (shared 8/6)">
         <img src="img/pineview/t-11.jpg" loading="lazy" alt="PV Sign.jpg">
         <figcaption><b>REJECT</b> Third shot of the same entrance sign, reduced to 1531x1148 and with heavy dappled shade falling across the sign face.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/pineview/f-13.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="AI-redrawn entrance sign at 1086x1448, and the Rental Office plaque reads &quot;Phone: 307-638-1800 | TTY:: 711&quot; when the real plaque reads 301-638-1800 with a single colon." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/pineview/t-13.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> AI-redrawn entrance sign at 1086x1448, and the Rental Office plaque reads &quot;Phone: 307-638-1800 | TTY:: 711&quot; when the real plaque reads 301-638-1800 with a single colon.</figcaption>
       </figure></div>
     </section>
 
@@ -1016,41 +1018,41 @@
         <img src="img/pfs/t-22.jpg" loading="lazy" alt="sign.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfs/f-1.jpg" data-name="Bedroom.png" data-verdict="REJECT" data-reason="AI staging that furnishes a vacant bedroom with an invented bed, nightstands, dresser, mirror and artwork." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfs/f-1.jpg" data-name="Bedroom.png" data-verdict="AI-DETECTED" data-reason="AI staging that furnishes a vacant bedroom with an invented bed, nightstands, dresser, mirror and artwork." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfs/t-1.jpg" loading="lazy" alt="Bedroom.png">
-        <figcaption><b>REJECT</b> AI staging that furnishes a vacant bedroom with an invented bed, nightstands, dresser, mirror and artwork.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging that furnishes a vacant bedroom with an invented bed, nightstands, dresser, mirror and artwork.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfs/f-2.jpg" data-name="Community Room 2.png" data-verdict="REJECT" data-reason="AI redraw of the second community room angle in which the real wall postings are replaced by invented framed art." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfs/f-2.jpg" data-name="Community Room 2.png" data-verdict="AI-DETECTED" data-reason="AI redraw of the second community room angle in which the real wall postings are replaced by invented framed art." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfs/t-2.jpg" loading="lazy" alt="Community Room 2.png">
-        <figcaption><b>REJECT</b> AI redraw of the second community room angle in which the real wall postings are replaced by invented framed art.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of the second community room angle in which the real wall postings are replaced by invented framed art.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfs/f-3.jpg" data-name="Community Room.png" data-verdict="REJECT" data-reason="AI redraw in which every posting on the bulletin board and every framed certificate on the wall is rendered as pseudo-text with no readable words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfs/f-3.jpg" data-name="Community Room.png" data-verdict="AI-DETECTED" data-reason="AI redraw in which every posting on the bulletin board and every framed certificate on the wall is rendered as pseudo-text with no readable words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfs/t-3.jpg" loading="lazy" alt="Community Room.png">
-        <figcaption><b>REJECT</b> AI redraw in which every posting on the bulletin board and every framed certificate on the wall is rendered as pseudo-text with no readable words.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw in which every posting on the bulletin board and every framed certificate on the wall is rendered as pseudo-text with no readable words.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfs/f-5.jpg" data-name="Exterior Buildings.png" data-verdict="REJECT" data-reason="AI redraw of the front building that erases the two outdoor AC condenser units visible in Katie's original and swaps the plantings for hostas." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfs/f-5.jpg" data-name="Exterior Buildings.png" data-verdict="AI-DETECTED" data-reason="AI redraw of the front building that erases the two outdoor AC condenser units visible in Katie's original and swaps the plantings for hostas." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfs/t-5.jpg" loading="lazy" alt="Exterior Buildings.png">
-        <figcaption><b>REJECT</b> AI redraw of the front building that erases the two outdoor AC condenser units visible in Katie's original and swaps the plantings for hostas.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of the front building that erases the two outdoor AC condenser units visible in Katie's original and swaps the plantings for hostas.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfs/f-7.jpg" data-name="Kitchen.png" data-verdict="REJECT" data-reason="AI staging that adds an invented dining table and four chairs, a rug, a coffee maker, canisters and potted plants to a vacant kitchen." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfs/f-7.jpg" data-name="Kitchen.png" data-verdict="AI-DETECTED" data-reason="AI staging that adds an invented dining table and four chairs, a rug, a coffee maker, canisters and potted plants to a vacant kitchen." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfs/t-7.jpg" loading="lazy" alt="Kitchen.png">
-        <figcaption><b>REJECT</b> AI staging that adds an invented dining table and four chairs, a rug, a coffee maker, canisters and potted plants to a vacant kitchen.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging that adds an invented dining table and four chairs, a rug, a coffee maker, canisters and potted plants to a vacant kitchen.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfs/f-8.jpg" data-name="Laundry Room.png" data-verdict="REJECT" data-reason="AI redraw in which the machine instruction notices on the wall are pseudo-text, the loose flyers on the floor are erased and a trash can is invented." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfs/f-8.jpg" data-name="Laundry Room.png" data-verdict="AI-DETECTED" data-reason="AI redraw in which the machine instruction notices on the wall are pseudo-text, the loose flyers on the floor are erased and a trash can is invented." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfs/t-8.jpg" loading="lazy" alt="Laundry Room.png">
-        <figcaption><b>REJECT</b> AI redraw in which the machine instruction notices on the wall are pseudo-text, the loose flyers on the floor are erased and a trash can is invented.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw in which the machine instruction notices on the wall are pseudo-text, the loose flyers on the floor are erased and a trash can is invented.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/pfs/f-10.jpg" data-name="Living Room.png" data-verdict="AI-DETECTED" data-reason="AI staging that fills the vacant living room with an invented sofa, armchair, television, curtains, rug and an olive tree." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/pfs/t-10.jpg" loading="lazy" alt="Living Room.png">
+        <figcaption><b>AI-DETECTED</b> AI staging that fills the vacant living room with an invented sofa, armchair, television, curtains, rug and an olive tree.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/pfs/f-11.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="AI redraw of Katie's sign photo in which the sparse mulch bed is replanted with dozens of invented flowering clumps and the dry lawn is turned uniformly green." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/pfs/t-11.jpg" loading="lazy" alt="Property Sign.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of Katie's sign photo in which the sparse mulch bed is replanted with dozens of invented flowering clumps and the dry lawn is turned uniformly green.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/pfs/f-9.jpg" data-name="Living Room.jpg" data-verdict="REJECT" data-reason="A roughly 56 KB website resolution copy with a burned in date and GPS stamp across the top, so a full size re-send is still needed." data-source="Drive 'PFS PICS' - website-resolution copy">
         <img src="img/pfs/t-9.jpg" loading="lazy" alt="Living Room.jpg">
         <figcaption><b>REJECT</b> A roughly 56 KB website resolution copy with a burned in date and GPS stamp across the top, so a full size re-send is still needed.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/pfs/f-10.jpg" data-name="Living Room.png" data-verdict="REJECT" data-reason="AI staging that fills the vacant living room with an invented sofa, armchair, television, curtains, rug and an olive tree." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/pfs/t-10.jpg" loading="lazy" alt="Living Room.png">
-        <figcaption><b>REJECT</b> AI staging that fills the vacant living room with an invented sofa, armchair, television, curtains, rug and an olive tree.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/pfs/f-11.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="AI redraw of Katie's sign photo in which the sparse mulch bed is replanted with dozens of invented flowering clumps and the dry lawn is turned uniformly green." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/pfs/t-11.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> AI redraw of Katie's sign photo in which the sparse mulch bed is replanted with dozens of invented flowering clumps and the dry lawn is turned uniformly green.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/pfs/f-12.jpg" data-name="bedroo.jpg" data-verdict="REJECT" data-reason="A roughly 47 KB website resolution copy with a burned in date and GPS stamp across the top, so a full size re-send is still needed." data-source="Drive 'PFS PICS' - website-resolution copy">
         <img src="img/pfs/t-12.jpg" loading="lazy" alt="bedroo.jpg">
@@ -1099,49 +1101,49 @@
         <img src="img/pfv/t-19.jpg" loading="lazy" alt="sign.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-1.jpg" data-name="Exterior Building.png" data-verdict="REJECT" data-reason="AI redraw in which the resident parking sign is rendered as green pseudo-lettering with no readable words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-1.jpg" data-name="Exterior Building.png" data-verdict="AI-DETECTED" data-reason="AI redraw in which the resident parking sign is rendered as green pseudo-lettering with no readable words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-1.jpg" loading="lazy" alt="Exterior Building.png">
-        <figcaption><b>REJECT</b> AI redraw in which the resident parking sign is rendered as green pseudo-lettering with no readable words.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw in which the resident parking sign is rendered as green pseudo-lettering with no readable words.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-2.jpg" data-name="Hallway.png" data-verdict="REJECT" data-reason="AI version of the vacant hallway that hangs an invented framed landscape on the bare wall and smooths the visibly soiled carpet clean." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-2.jpg" data-name="Hallway.png" data-verdict="AI-DETECTED" data-reason="AI version of the vacant hallway that hangs an invented framed landscape on the bare wall and smooths the visibly soiled carpet clean." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-2.jpg" loading="lazy" alt="Hallway.png">
-        <figcaption><b>REJECT</b> AI version of the vacant hallway that hangs an invented framed landscape on the bare wall and smooths the visibly soiled carpet clean.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI version of the vacant hallway that hangs an invented framed landscape on the bare wall and smooths the visibly soiled carpet clean.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-3.jpg" data-name="Kitchen 1.png" data-verdict="REJECT" data-reason="AI staging of Katie's vacant kitchen that adds an invented round dining table and chairs, framed art, a coffee maker and potted plants." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-3.jpg" data-name="Kitchen 1.png" data-verdict="AI-DETECTED" data-reason="AI staging of Katie's vacant kitchen that adds an invented round dining table and chairs, framed art, a coffee maker and potted plants." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-3.jpg" loading="lazy" alt="Kitchen 1.png">
-        <figcaption><b>REJECT</b> AI staging of Katie's vacant kitchen that adds an invented round dining table and chairs, framed art, a coffee maker and potted plants.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of Katie's vacant kitchen that adds an invented round dining table and chairs, framed art, a coffee maker and potted plants.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-4.jpg" data-name="Kitchen 2.png" data-verdict="REJECT" data-reason="AI staging of the oak cabinet kitchen that adds an invented cutting board, fruit bowl, plants, rug and towel, and cleans the debris off the floor." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-4.jpg" data-name="Kitchen 2.png" data-verdict="AI-DETECTED" data-reason="AI staging of the oak cabinet kitchen that adds an invented cutting board, fruit bowl, plants, rug and towel, and cleans the debris off the floor." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-4.jpg" loading="lazy" alt="Kitchen 2.png">
-        <figcaption><b>REJECT</b> AI staging of the oak cabinet kitchen that adds an invented cutting board, fruit bowl, plants, rug and towel, and cleans the debris off the floor.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of the oak cabinet kitchen that adds an invented cutting board, fruit bowl, plants, rug and towel, and cleans the debris off the floor.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-5.jpg" data-name="Living Room 1.png" data-verdict="REJECT" data-reason="AI staging of Katie's vacant living room with an invented sofa, armchair, rug, lamps and wall art, and the heavily soiled carpet rendered clean." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-5.jpg" data-name="Living Room 1.png" data-verdict="AI-DETECTED" data-reason="AI staging of Katie's vacant living room with an invented sofa, armchair, rug, lamps and wall art, and the heavily soiled carpet rendered clean." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-5.jpg" loading="lazy" alt="Living Room 1.png">
-        <figcaption><b>REJECT</b> AI staging of Katie's vacant living room with an invented sofa, armchair, rug, lamps and wall art, and the heavily soiled carpet rendered clean.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of Katie's vacant living room with an invented sofa, armchair, rug, lamps and wall art, and the heavily soiled carpet rendered clean.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-6.jpg" data-name="Living Room 2.png" data-verdict="REJECT" data-reason="AI staging of the same room with a different invented furniture set including a television, media console and dining table." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-6.jpg" data-name="Living Room 2.png" data-verdict="AI-DETECTED" data-reason="AI staging of the same room with a different invented furniture set including a television, media console and dining table." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-6.jpg" loading="lazy" alt="Living Room 2.png">
-        <figcaption><b>REJECT</b> AI staging of the same room with a different invented furniture set including a television, media console and dining table.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of the same room with a different invented furniture set including a television, media console and dining table.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-7.jpg" data-name="Living Room 3.png" data-verdict="REJECT" data-reason="AI staging of the same room again with invented blue patterned armchairs and different wall art, so the five living room files contradict each other." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-7.jpg" data-name="Living Room 3.png" data-verdict="AI-DETECTED" data-reason="AI staging of the same room again with invented blue patterned armchairs and different wall art, so the five living room files contradict each other." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-7.jpg" loading="lazy" alt="Living Room 3.png">
-        <figcaption><b>REJECT</b> AI staging of the same room again with invented blue patterned armchairs and different wall art, so the five living room files contradict each other.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of the same room again with invented blue patterned armchairs and different wall art, so the five living room files contradict each other.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-8.jpg" data-name="Living Room 4.png" data-verdict="REJECT" data-reason="AI staging of the same room with yet another invented furniture arrangement, and the stained carpet in Katie's original shown as clean." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-8.jpg" data-name="Living Room 4.png" data-verdict="AI-DETECTED" data-reason="AI staging of the same room with yet another invented furniture arrangement, and the stained carpet in Katie's original shown as clean." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-8.jpg" loading="lazy" alt="Living Room 4.png">
-        <figcaption><b>REJECT</b> AI staging of the same room with yet another invented furniture arrangement, and the stained carpet in Katie's original shown as clean.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of the same room with yet another invented furniture arrangement, and the stained carpet in Katie's original shown as clean.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-9.jpg" data-name="Living Room 5.png" data-verdict="REJECT" data-reason="AI staging of the same room from a fifth angle with an invented sectional, media console, floor lamp and olive tree." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-9.jpg" data-name="Living Room 5.png" data-verdict="AI-DETECTED" data-reason="AI staging of the same room from a fifth angle with an invented sectional, media console, floor lamp and olive tree." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-9.jpg" loading="lazy" alt="Living Room 5.png">
-        <figcaption><b>REJECT</b> AI staging of the same room from a fifth angle with an invented sectional, media console, floor lamp and olive tree.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of the same room from a fifth angle with an invented sectional, media console, floor lamp and olive tree.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-10.jpg" data-name="Long Hallway.png" data-verdict="REJECT" data-reason="AI version of the same hallway with three invented framed pictures added and the stained carpet in Katie's original rendered clean." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-10.jpg" data-name="Long Hallway.png" data-verdict="AI-DETECTED" data-reason="AI version of the same hallway with three invented framed pictures added and the stained carpet in Katie's original rendered clean." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-10.jpg" loading="lazy" alt="Long Hallway.png">
-        <figcaption><b>REJECT</b> AI version of the same hallway with three invented framed pictures added and the stained carpet in Katie's original rendered clean.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI version of the same hallway with three invented framed pictures added and the stained carpet in Katie's original rendered clean.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/pfv/f-11.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="AI redraw of Katie's sign photo in which the bed of small young shrubs is replanted with rows of invented daylilies and pink flowering mounds." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/pfv/f-11.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="AI redraw of Katie's sign photo in which the bed of small young shrubs is replanted with rows of invented daylilies and pink flowering mounds." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/pfv/t-11.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> AI redraw of Katie's sign photo in which the bed of small young shrubs is replanted with rows of invented daylilies and pink flowering mounds.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of Katie's sign photo in which the bed of small young shrubs is replanted with rows of invented daylilies and pink flowering mounds.</figcaption>
       </figure></div>
     </section>
 
@@ -1186,37 +1188,37 @@
         <img src="img/stevensville/t-17.jpg" loading="lazy" alt="walkway.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
       </figure>
+      <figure class="card ai" data-full="img/stevensville/f-2.jpg" data-name="Bedroom.jpg" data-verdict="AI-DETECTED" data-reason="~159 KB web-size copy of an AI render, with four drawer pulls floating on the blank side panel of the dresser where there are no drawers." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
+        <img src="img/stevensville/t-2.jpg" loading="lazy" alt="Bedroom.jpg">
+        <figcaption><b>AI-DETECTED</b> ~159 KB web-size copy of an AI render, with four drawer pulls floating on the blank side panel of the dresser where there are no drawers.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/stevensville/f-4.jpg" data-name="Kitchen.jpg" data-verdict="AI-DETECTED" data-reason="~206 KB web-size copy of an AI render in which the framed wall print reads HOME twice with a line of smeared pseudo-letters between the two words." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
+        <img src="img/stevensville/t-4.jpg" loading="lazy" alt="Kitchen.jpg">
+        <figcaption><b>AI-DETECTED</b> ~206 KB web-size copy of an AI render in which the framed wall print reads HOME twice with a line of smeared pseudo-letters between the two words.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/stevensville/f-5.jpg" data-name="Living Room.jpg" data-verdict="AI-DETECTED" data-reason="~113 KB web-size copy at 820x547 of an AI render, where the through-wall air conditioner's louvres are wavy fins that do not line up between the upper and lower grilles." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
+        <img src="img/stevensville/t-5.jpg" loading="lazy" alt="Living Room.jpg">
+        <figcaption><b>AI-DETECTED</b> ~113 KB web-size copy at 820x547 of an AI render, where the through-wall air conditioner's louvres are wavy fins that do not line up between the upper and lower grilles.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/stevensville/f-7.jpg" data-name="Property Sign 2.png" data-verdict="AI-DETECTED" data-reason="Second AI render of the same moment, identical parked cars and tree but an entirely different invented flower bed, and the small building plaque above the sign is unreadable pseudo-lettering." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/stevensville/t-7.jpg" loading="lazy" alt="Property Sign 2.png">
+        <figcaption><b>AI-DETECTED</b> Second AI render of the same moment, identical parked cars and tree but an entirely different invented flower bed, and the small building plaque above the sign is unreadable pseudo-lettering.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/stevensville/f-8.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="AI redraw of the entrance sign in which the rental office number reads 410-645-0884, which is not the property's number of 410-643-5884." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/stevensville/t-8.jpg" loading="lazy" alt="Property Sign.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of the entrance sign in which the rental office number reads 410-645-0884, which is not the property's number of 410-643-5884.</figcaption>
+      </figure>
       <figure class="card reject" data-full="img/stevensville/f-1.jpg" data-name="Bedroom 1.jpg" data-verdict="REJECT" data-reason="~153 KB web-size copy at 965x777 whose six-print gallery wall has frames drawn at inconsistent sizes and spacing, and no camera original was supplied." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
         <img src="img/stevensville/t-1.jpg" loading="lazy" alt="Bedroom 1.jpg">
         <figcaption><b>REJECT</b> ~153 KB web-size copy at 965x777 whose six-print gallery wall has frames drawn at inconsistent sizes and spacing, and no camera original was supplied.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/stevensville/f-2.jpg" data-name="Bedroom.jpg" data-verdict="REJECT" data-reason="~159 KB web-size copy of an AI render, with four drawer pulls floating on the blank side panel of the dresser where there are no drawers." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
-        <img src="img/stevensville/t-2.jpg" loading="lazy" alt="Bedroom.jpg">
-        <figcaption><b>REJECT</b> ~159 KB web-size copy of an AI render, with four drawer pulls floating on the blank side panel of the dresser where there are no drawers.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/stevensville/f-3.jpg" data-name="Exterior Walkway.jpg" data-verdict="REJECT" data-reason="~219 KB synthetic courtyard view in which the buildings along both sides have no entry doors at all and the far building is a featureless slab." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
         <img src="img/stevensville/t-3.jpg" loading="lazy" alt="Exterior Walkway.jpg">
         <figcaption><b>REJECT</b> ~219 KB synthetic courtyard view in which the buildings along both sides have no entry doors at all and the far building is a featureless slab.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/stevensville/f-4.jpg" data-name="Kitchen.jpg" data-verdict="REJECT" data-reason="~206 KB web-size copy of an AI render in which the framed wall print reads HOME twice with a line of smeared pseudo-letters between the two words." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
-        <img src="img/stevensville/t-4.jpg" loading="lazy" alt="Kitchen.jpg">
-        <figcaption><b>REJECT</b> ~206 KB web-size copy of an AI render in which the framed wall print reads HOME twice with a line of smeared pseudo-letters between the two words.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/stevensville/f-5.jpg" data-name="Living Room.jpg" data-verdict="REJECT" data-reason="~113 KB web-size copy at 820x547 of an AI render, where the through-wall air conditioner's louvres are wavy fins that do not line up between the upper and lower grilles." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
-        <img src="img/stevensville/t-5.jpg" loading="lazy" alt="Living Room.jpg">
-        <figcaption><b>REJECT</b> ~113 KB web-size copy at 820x547 of an AI render, where the through-wall air conditioner's louvres are wavy fins that do not line up between the upper and lower grilles.</figcaption>
-      </figure>
       <figure class="card reject" data-full="img/stevensville/f-6.jpg" data-name="Outside Walkway.jpg" data-verdict="REJECT" data-reason="~185 KB portrait version of the same synthetic courtyard, with blank doorless siding along the whole far range and a completely empty sky." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
         <img src="img/stevensville/t-6.jpg" loading="lazy" alt="Outside Walkway.jpg">
         <figcaption><b>REJECT</b> ~185 KB portrait version of the same synthetic courtyard, with blank doorless siding along the whole far range and a completely empty sky.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/stevensville/f-7.jpg" data-name="Property Sign 2.png" data-verdict="REJECT" data-reason="Second AI render of the same moment, identical parked cars and tree but an entirely different invented flower bed, and the small building plaque above the sign is unreadable pseudo-lettering." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/stevensville/t-7.jpg" loading="lazy" alt="Property Sign 2.png">
-        <figcaption><b>REJECT</b> Second AI render of the same moment, identical parked cars and tree but an entirely different invented flower bed, and the small building plaque above the sign is unreadable pseudo-lettering.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/stevensville/f-8.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="AI redraw of the entrance sign in which the rental office number reads 410-645-0884, which is not the property's number of 410-643-5884." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/stevensville/t-8.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> AI redraw of the entrance sign in which the rental office number reads 410-645-0884, which is not the property's number of 410-643-5884.</figcaption>
       </figure></div>
     </section>
 
@@ -1249,22 +1251,6 @@
         <img src="img/taneytown/t-51.jpg" loading="lazy" alt="bedroom.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
       </figure>
-      <figure class="card keep" data-full="img/taneytown/f-52.jpg" data-name="exterior-1.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/taneytown/t-52.jpg" loading="lazy" alt="exterior-1.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/taneytown/f-53.jpg" data-name="exterior-2.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/taneytown/t-53.jpg" loading="lazy" alt="exterior-2.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/taneytown/f-54.jpg" data-name="exterior-3.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/taneytown/t-54.jpg" loading="lazy" alt="exterior-3.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/taneytown/f-55.jpg" data-name="hero.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/taneytown/t-55.jpg" loading="lazy" alt="hero.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
       <figure class="card keep" data-full="img/taneytown/f-56.jpg" data-name="kitchen.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
         <img src="img/taneytown/t-56.jpg" loading="lazy" alt="kitchen.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
@@ -1288,6 +1274,22 @@
       <figure class="card keep" data-full="img/taneytown/f-61.jpg" data-name="sign.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
         <img src="img/taneytown/t-61.jpg" loading="lazy" alt="sign.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/taneytown/f-52.jpg" data-name="exterior-1.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/taneytown/t-52.jpg" loading="lazy" alt="exterior-1.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/taneytown/f-53.jpg" data-name="exterior-2.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/taneytown/t-53.jpg" loading="lazy" alt="exterior-2.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/taneytown/f-54.jpg" data-name="exterior-3.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/taneytown/t-54.jpg" loading="lazy" alt="exterior-3.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/taneytown/f-55.jpg" data-name="hero.jpg" data-verdict="ALL WE’VE GOT" data-reason="Homepage banner is a faded print scan. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/taneytown/t-55.jpg" loading="lazy" alt="hero.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Homepage banner is a faded print scan. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
       </figure>
       <figure class="card hold" data-full="img/taneytown/f-9.jpg" data-name="Bulding 4 August 2020.JPG" data-verdict="REVIEW" data-reason="Real camera photo dated August 2020 in the filename, still a clean building exterior if the property looks the same today." data-source="Drive folder (shared 8/6)">
         <img src="img/taneytown/t-9.jpg" loading="lazy" alt="Bulding 4 August 2020.JPG">
@@ -1337,45 +1339,85 @@
         <img src="img/taneytown/t-46.jpg" loading="lazy" alt="taney-2.jpg">
         <figcaption><b>REVIEW</b> Real exterior photo but only 1247 x 1024, which is small for a hero and better suited to a gallery thumbnail.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-1.jpg" data-name="Bathroom 2.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Bthrm 2.jpg with an invented plant, soap dispenser and towel, and a mirror whose reflection does not match the room in front of it." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-1.jpg" data-name="Bathroom 2.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Bthrm 2.jpg with an invented plant, soap dispenser and towel, and a mirror whose reflection does not match the room in front of it." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-1.jpg" loading="lazy" alt="Bathroom 2.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Bthrm 2.jpg with an invented plant, soap dispenser and towel, and a mirror whose reflection does not match the room in front of it.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Bthrm 2.jpg with an invented plant, soap dispenser and towel, and a mirror whose reflection does not match the room in front of it.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-2.jpg" data-name="Bathroom.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Bthrm 1.jpg with an invented shower curtain, towels, bath mat and toiletry bottles whose printed labels are unreadable pseudo-letters." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-2.jpg" data-name="Bathroom.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Bthrm 1.jpg with an invented shower curtain, towels, bath mat and toiletry bottles whose printed labels are unreadable pseudo-letters." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-2.jpg" loading="lazy" alt="Bathroom.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Bthrm 1.jpg with an invented shower curtain, towels, bath mat and toiletry bottles whose printed labels are unreadable pseudo-letters.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Bthrm 1.jpg with an invented shower curtain, towels, bath mat and toiletry bottles whose printed labels are unreadable pseudo-letters.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-3.jpg" data-name="Bedroom 1.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Master Bdrm 1.jpg with an invented bed, bench, nightstands and dresser, and a mirror at the left edge that floats with no visible wall behind it." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-3.jpg" data-name="Bedroom 1.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Master Bdrm 1.jpg with an invented bed, bench, nightstands and dresser, and a mirror at the left edge that floats with no visible wall behind it." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-3.jpg" loading="lazy" alt="Bedroom 1.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Master Bdrm 1.jpg with an invented bed, bench, nightstands and dresser, and a mirror at the left edge that floats with no visible wall behind it.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Master Bdrm 1.jpg with an invented bed, bench, nightstands and dresser, and a mirror at the left edge that floats with no visible wall behind it.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-4.jpg" data-name="Bedroom side chair.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Bdrm 2-1.jpg that adds an accent chair, potted tree and framed print, and blurs the view through the window into an indistinct blob." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-4.jpg" data-name="Bedroom side chair.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Bdrm 2-1.jpg that adds an accent chair, potted tree and framed print, and blurs the view through the window into an indistinct blob." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-4.jpg" loading="lazy" alt="Bedroom side chair.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Bdrm 2-1.jpg that adds an accent chair, potted tree and framed print, and blurs the view through the window into an indistinct blob.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Bdrm 2-1.jpg that adds an accent chair, potted tree and framed print, and blurs the view through the window into an indistinct blob.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-5.jpg" data-name="Bedroom.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Bdrm 2-2.jpg with a fully invented bedroom set of bed, two nightstands, lamps, dresser and rug, and the carpet recolored." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-5.jpg" data-name="Bedroom.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Bdrm 2-2.jpg with a fully invented bedroom set of bed, two nightstands, lamps, dresser and rug, and the carpet recolored." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-5.jpg" loading="lazy" alt="Bedroom.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Bdrm 2-2.jpg with a fully invented bedroom set of bed, two nightstands, lamps, dresser and rug, and the carpet recolored.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Bdrm 2-2.jpg with a fully invented bedroom set of bed, two nightstands, lamps, dresser and rug, and the carpet recolored.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-6.jpg" data-name="Brick Exterior.png" data-verdict="REJECT" data-reason="AI redraw of taneytown2.jpg that deleted the resident garden figurines and walkway lights and replaced the plantings with generic ornamental grasses." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-6.jpg" data-name="Brick Exterior.png" data-verdict="AI-DETECTED" data-reason="AI redraw of taneytown2.jpg that deleted the resident garden figurines and walkway lights and replaced the plantings with generic ornamental grasses." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-6.jpg" loading="lazy" alt="Brick Exterior.png">
-        <figcaption><b>REJECT</b> AI redraw of taneytown2.jpg that deleted the resident garden figurines and walkway lights and replaced the plantings with generic ornamental grasses.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of taneytown2.jpg that deleted the resident garden figurines and walkway lights and replaced the plantings with generic ornamental grasses.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-7.jpg" data-name="Building Exterior.png" data-verdict="REJECT" data-reason="AI redraw of taney-2.jpg with the sky flattened to solid blue, the shrubs reshaped and the flower bed invented." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-7.jpg" data-name="Building Exterior.png" data-verdict="AI-DETECTED" data-reason="AI redraw of taney-2.jpg with the sky flattened to solid blue, the shrubs reshaped and the flower bed invented." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-7.jpg" loading="lazy" alt="Building Exterior.png">
-        <figcaption><b>REJECT</b> AI redraw of taney-2.jpg with the sky flattened to solid blue, the shrubs reshaped and the flower bed invented.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of taney-2.jpg with the sky flattened to solid blue, the shrubs reshaped and the flower bed invented.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-8.jpg" data-name="Buildings.png" data-verdict="REJECT" data-reason="AI redraw of Bulding 4 August 2020.JPG in which the unit number reads 716 instead of the real 114 and the porch light is a melted blob." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-8.jpg" data-name="Buildings.png" data-verdict="AI-DETECTED" data-reason="AI redraw of Bulding 4 August 2020.JPG in which the unit number reads 716 instead of the real 114 and the porch light is a melted blob." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-8.jpg" loading="lazy" alt="Buildings.png">
-        <figcaption><b>REJECT</b> AI redraw of Bulding 4 August 2020.JPG in which the unit number reads 716 instead of the real 114 and the porch light is a melted blob.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of Bulding 4 August 2020.JPG in which the unit number reads 716 instead of the real 114 and the porch light is a melted blob.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-10.jpg" data-name="Exterior Building.png" data-verdict="REJECT" data-reason="AI redraw of taney-1.jpg with the sky and lawn replaced and pink flower beds invented along the walk that do not exist in the original." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-10.jpg" data-name="Exterior Building.png" data-verdict="AI-DETECTED" data-reason="AI redraw of taney-1.jpg with the sky and lawn replaced and pink flower beds invented along the walk that do not exist in the original." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-10.jpg" loading="lazy" alt="Exterior Building.png">
-        <figcaption><b>REJECT</b> AI redraw of taney-1.jpg with the sky and lawn replaced and pink flower beds invented along the walk that do not exist in the original.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of taney-1.jpg with the sky and lawn replaced and pink flower beds invented along the walk that do not exist in the original.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/taneytown/f-11.jpg" data-name="Exterior.png" data-verdict="REJECT" data-reason="AI redraw of taneytown.jpg where the second unit number is an illegible smear and the mansard shingles have been recolored from brown to near black." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/taneytown/f-11.jpg" data-name="Exterior.png" data-verdict="AI-DETECTED" data-reason="AI redraw of taneytown.jpg where the second unit number is an illegible smear and the mansard shingles have been recolored from brown to near black." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/taneytown/t-11.jpg" loading="lazy" alt="Exterior.png">
-        <figcaption><b>REJECT</b> AI redraw of taneytown.jpg where the second unit number is an illegible smear and the mansard shingles have been recolored from brown to near black.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of taneytown.jpg where the second unit number is an illegible smear and the mansard shingles have been recolored from brown to near black.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-15.jpg" data-name="Kitchen 2.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Kitchen 2.jpg that invents a dining table, two chairs, a console table and two pieces of wall art in what is a bare corner in the original." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-15.jpg" loading="lazy" alt="Kitchen 2.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Kitchen 2.jpg that invents a dining table, two chairs, a console table and two pieces of wall art in what is a bare corner in the original.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-16.jpg" data-name="Kitchen 3.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Kitchen 3.jpg that adds a lace door curtain, a framed botanical print, a potted plant and a hanging towel that are not in the real photo." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-16.jpg" loading="lazy" alt="Kitchen 3.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Kitchen 3.jpg that adds a lace door curtain, a framed botanical print, a potted plant and a hanging towel that are not in the real photo.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-17.jpg" data-name="Kitchen.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Kitchen 1.jpg with invented staging props including a plant, fruit bowl, canisters, utensil crock and floor runner." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-17.jpg" loading="lazy" alt="Kitchen.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Kitchen 1.jpg with invented staging props including a plant, fruit bowl, canisters, utensil crock and floor runner.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-18.jpg" data-name="Living Room 2.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Lvgrm 2.jpg with an invented sofa, television and media console, and the book spines on the console render as unreadable pseudo-text." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-18.jpg" loading="lazy" alt="Living Room 2.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Lvgrm 2.jpg with an invented sofa, television and media console, and the book spines on the console render as unreadable pseudo-text.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-19.jpg" data-name="Living Room.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Lvgrm 1.jpg with an entire invented living room set, sofa, armchair, rug, mirror and framed art, in a room that is empty in the original." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-19.jpg" loading="lazy" alt="Living Room.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Lvgrm 1.jpg with an entire invented living room set, sofa, armchair, rug, mirror and framed art, in a room that is empty in the original.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-20.jpg" data-name="Outside Building Exteriors.png" data-verdict="AI-DETECTED" data-reason="AI generated streetscape with an unnaturally uniform lawn filling the lower half and a cloudless gradient sky, plus an unreadable pink smear where a yard sign should be." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-20.jpg" loading="lazy" alt="Outside Building Exteriors.png">
+        <figcaption><b>AI-DETECTED</b> AI generated streetscape with an unnaturally uniform lawn filling the lower half and a cloudless gradient sky, plus an unreadable pink smear where a yard sign should be.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-21.jpg" data-name="Playground.png" data-verdict="AI-DETECTED" data-reason="AI generated image with no real counterpart in the folder, and the community rules board on the post is filled with pseudo-letter scribbles that do not form words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-21.jpg" loading="lazy" alt="Playground.png">
+        <figcaption><b>AI-DETECTED</b> AI generated image with no real counterpart in the folder, and the community rules board on the post is filled with pseudo-letter scribbles that do not form words.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-22.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN Sign.JPG in which the Equal Housing logo caption reads EOUAL HOUSING OPPORTUNITY and the flower bed has been repopulated with plants that are not there." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-22.jpg" loading="lazy" alt="Property Sign.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN Sign.JPG in which the Equal Housing logo caption reads EOUAL HOUSING OPPORTUNITY and the flower bed has been repopulated with plants that are not there.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-23.jpg" data-name="Stairwell.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Stairway.jpg that hangs four framed art prints and a handrail on walls that are bare in the real photo." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-23.jpg" loading="lazy" alt="Stairwell.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Stairway.jpg that hangs four framed art prints and a handrail on walls that are bare in the real photo.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/taneytown/f-44.jpg" data-name="Towel Closet.png" data-verdict="AI-DETECTED" data-reason="AI redraw of TAN-Hallway-Closet.jpg that fills the empty linen shelves with invented stacks of folded towels and a wicker basket." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/taneytown/t-44.jpg" loading="lazy" alt="Towel Closet.png">
+        <figcaption><b>AI-DETECTED</b> AI redraw of TAN-Hallway-Closet.jpg that fills the empty linen shelves with invented stacks of folded towels and a wicker basket.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/taneytown/f-12.jpg" data-name="IMG_0958.jpeg" data-verdict="REJECT" data-reason="320 x 240 exterior at roughly 75 KB, a website copy far too small to publish." data-source="Drive - website re-download">
         <img src="img/taneytown/t-12.jpg" loading="lazy" alt="IMG_0958.jpeg">
@@ -1388,42 +1430,6 @@
       <figure class="card reject" data-full="img/taneytown/f-14.jpg" data-name="IMG_1174.jpeg" data-verdict="REJECT" data-reason="320 x 240 sign photo at roughly 77 KB, a website copy far too small to publish." data-source="Drive - website re-download">
         <img src="img/taneytown/t-14.jpg" loading="lazy" alt="IMG_1174.jpeg">
         <figcaption><b>REJECT</b> 320 x 240 sign photo at roughly 77 KB, a website copy far too small to publish.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-15.jpg" data-name="Kitchen 2.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Kitchen 2.jpg that invents a dining table, two chairs, a console table and two pieces of wall art in what is a bare corner in the original." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-15.jpg" loading="lazy" alt="Kitchen 2.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Kitchen 2.jpg that invents a dining table, two chairs, a console table and two pieces of wall art in what is a bare corner in the original.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-16.jpg" data-name="Kitchen 3.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Kitchen 3.jpg that adds a lace door curtain, a framed botanical print, a potted plant and a hanging towel that are not in the real photo." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-16.jpg" loading="lazy" alt="Kitchen 3.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Kitchen 3.jpg that adds a lace door curtain, a framed botanical print, a potted plant and a hanging towel that are not in the real photo.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-17.jpg" data-name="Kitchen.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Kitchen 1.jpg with invented staging props including a plant, fruit bowl, canisters, utensil crock and floor runner." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-17.jpg" loading="lazy" alt="Kitchen.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Kitchen 1.jpg with invented staging props including a plant, fruit bowl, canisters, utensil crock and floor runner.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-18.jpg" data-name="Living Room 2.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Lvgrm 2.jpg with an invented sofa, television and media console, and the book spines on the console render as unreadable pseudo-text." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-18.jpg" loading="lazy" alt="Living Room 2.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Lvgrm 2.jpg with an invented sofa, television and media console, and the book spines on the console render as unreadable pseudo-text.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-19.jpg" data-name="Living Room.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Lvgrm 1.jpg with an entire invented living room set, sofa, armchair, rug, mirror and framed art, in a room that is empty in the original." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-19.jpg" loading="lazy" alt="Living Room.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Lvgrm 1.jpg with an entire invented living room set, sofa, armchair, rug, mirror and framed art, in a room that is empty in the original.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-20.jpg" data-name="Outside Building Exteriors.png" data-verdict="REJECT" data-reason="AI generated streetscape with an unnaturally uniform lawn filling the lower half and a cloudless gradient sky, plus an unreadable pink smear where a yard sign should be." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-20.jpg" loading="lazy" alt="Outside Building Exteriors.png">
-        <figcaption><b>REJECT</b> AI generated streetscape with an unnaturally uniform lawn filling the lower half and a cloudless gradient sky, plus an unreadable pink smear where a yard sign should be.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-21.jpg" data-name="Playground.png" data-verdict="REJECT" data-reason="AI generated image with no real counterpart in the folder, and the community rules board on the post is filled with pseudo-letter scribbles that do not form words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-21.jpg" loading="lazy" alt="Playground.png">
-        <figcaption><b>REJECT</b> AI generated image with no real counterpart in the folder, and the community rules board on the post is filled with pseudo-letter scribbles that do not form words.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-22.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="AI redraw of TAN Sign.JPG in which the Equal Housing logo caption reads EOUAL HOUSING OPPORTUNITY and the flower bed has been repopulated with plants that are not there." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-22.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN Sign.JPG in which the Equal Housing logo caption reads EOUAL HOUSING OPPORTUNITY and the flower bed has been repopulated with plants that are not there.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-23.jpg" data-name="Stairwell.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Stairway.jpg that hangs four framed art prints and a handrail on walls that are bare in the real photo." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-23.jpg" loading="lazy" alt="Stairwell.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Stairway.jpg that hangs four framed art prints and a handrail on walls that are bare in the real photo.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/taneytown/f-27.jpg" data-name="TAN-Bdrm 2-Closet.jpg" data-verdict="REJECT" data-reason="Empty closet interior stored rotated 90 degrees, with no marketing value." data-source="Drive folder (shared 8/6)">
         <img src="img/taneytown/t-27.jpg" loading="lazy" alt="TAN-Bdrm 2-Closet.jpg">
@@ -1464,10 +1470,6 @@
       <figure class="card reject" data-full="img/taneytown/f-43.jpg" data-name="TAN-UT Closet.jpg" data-verdict="REJECT" data-reason="Utility closet showing the air handler and water heater, which is maintenance documentation rather than marketing material." data-source="Drive folder (shared 8/6)">
         <img src="img/taneytown/t-43.jpg" loading="lazy" alt="TAN-UT Closet.jpg">
         <figcaption><b>REJECT</b> Utility closet showing the air handler and water heater, which is maintenance documentation rather than marketing material.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/taneytown/f-44.jpg" data-name="Towel Closet.png" data-verdict="REJECT" data-reason="AI redraw of TAN-Hallway-Closet.jpg that fills the empty linen shelves with invented stacks of folded towels and a wicker basket." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/taneytown/t-44.jpg" loading="lazy" alt="Towel Closet.png">
-        <figcaption><b>REJECT</b> AI redraw of TAN-Hallway-Closet.jpg that fills the empty linen shelves with invented stacks of folded towels and a wicker basket.</figcaption>
       </figure></div>
     </section>
 
@@ -1492,18 +1494,6 @@
         <img src="img/thurmont/t-36.jpg" loading="lazy" alt="bedroom-2.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
       </figure>
-      <figure class="card keep" data-full="img/thurmont/f-37.jpg" data-name="exterior-1.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/thurmont/t-37.jpg" loading="lazy" alt="exterior-1.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/thurmont/f-38.jpg" data-name="exterior-2.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/thurmont/t-38.jpg" loading="lazy" alt="exterior-2.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
-      <figure class="card keep" data-full="img/thurmont/f-39.jpg" data-name="hero.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/thurmont/t-39.jpg" loading="lazy" alt="hero.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
       <figure class="card keep" data-full="img/thurmont/f-40.jpg" data-name="kitchen-2.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
         <img src="img/thurmont/t-40.jpg" loading="lazy" alt="kitchen-2.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
@@ -1520,93 +1510,105 @@
         <img src="img/thurmont/t-43.jpg" loading="lazy" alt="living-room.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
       </figure>
-      <figure class="card keep" data-full="img/thurmont/f-44.jpg" data-name="playground.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
-        <img src="img/thurmont/t-44.jpg" loading="lazy" alt="playground.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
-      </figure>
       <figure class="card keep" data-full="img/thurmont/f-45.jpg" data-name="sign.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
         <img src="img/thurmont/t-45.jpg" loading="lazy" alt="sign.jpg">
         <figcaption><b>KEEP</b> Currently live on the website</figcaption>
       </figure>
-      <figure class="card keep" data-full="img/thurmont/f-46.jpg" data-name="welcome-sign.jpg" data-verdict="KEEP" data-reason="Currently live on the website" data-source="Live website">
+      <figure class="card gap" data-full="img/thurmont/f-37.jpg" data-name="exterior-1.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/thurmont/t-37.jpg" loading="lazy" alt="exterior-1.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/thurmont/f-38.jpg" data-name="exterior-2.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/thurmont/t-38.jpg" loading="lazy" alt="exterior-2.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/thurmont/f-39.jpg" data-name="hero.jpg" data-verdict="ALL WE’VE GOT" data-reason="Homepage banner is a dated print scan. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/thurmont/t-39.jpg" loading="lazy" alt="hero.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Homepage banner is a dated print scan. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/thurmont/f-44.jpg" data-name="playground.jpg" data-verdict="ALL WE’VE GOT" data-reason="Playground shot is a dated print scan. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
+        <img src="img/thurmont/t-44.jpg" loading="lazy" alt="playground.jpg">
+        <figcaption><b>ALL WE’VE GOT</b> Playground shot is a dated print scan. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
+      </figure>
+      <figure class="card gap" data-full="img/thurmont/f-46.jpg" data-name="welcome-sign.jpg" data-verdict="ALL WE’VE GOT" data-reason="Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives." data-source="Live website">
         <img src="img/thurmont/t-46.jpg" loading="lazy" alt="welcome-sign.jpg">
-        <figcaption><b>KEEP</b> Currently live on the website</figcaption>
+        <figcaption><b>ALL WE’VE GOT</b> Very dated print scan from the property binder. Not good enough, but it is all we have until a fresh photo arrives.</figcaption>
       </figure>
       <figure class="card hold" data-full="img/thurmont/f-20.jpg" data-name="THU Sign.jpg" data-verdict="REVIEW" data-reason="Genuine photo of the real entrance sign but only 640x480 at ~186 KB, so it is useful as the reference for what the sign actually says and not as a published image." data-source="Drive folder (shared 8/6)">
         <img src="img/thurmont/t-20.jpg" loading="lazy" alt="THU Sign.jpg">
         <figcaption><b>REVIEW</b> Genuine photo of the real entrance sign but only 640x480 at ~186 KB, so it is useful as the reference for what the sign actually says and not as a published image.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-1.jpg" data-name="Bathroom 1.png" data-verdict="REJECT" data-reason="AI staging with towels, a plant and toiletries added, and a yellow smear runs along the front edge of the vanity top where the counter should meet the wall." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-1.jpg" data-name="Bathroom 1.png" data-verdict="AI-DETECTED" data-reason="AI staging with towels, a plant and toiletries added, and a yellow smear runs along the front edge of the vanity top where the counter should meet the wall." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-1.jpg" loading="lazy" alt="Bathroom 1.png">
-        <figcaption><b>REJECT</b> AI staging with towels, a plant and toiletries added, and a yellow smear runs along the front edge of the vanity top where the counter should meet the wall.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging with towels, a plant and toiletries added, and a yellow smear runs along the front edge of the vanity top where the counter should meet the wall.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-2.jpg" data-name="Bathroom 2.png" data-verdict="REJECT" data-reason="AI staging of the same vanity as Bathroom 1.png, relit and dressed with a different towel, framed print and light fixture in each render." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-2.jpg" data-name="Bathroom 2.png" data-verdict="AI-DETECTED" data-reason="AI staging of the same vanity as Bathroom 1.png, relit and dressed with a different towel, framed print and light fixture in each render." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-2.jpg" loading="lazy" alt="Bathroom 2.png">
-        <figcaption><b>REJECT</b> AI staging of the same vanity as Bathroom 1.png, relit and dressed with a different towel, framed print and light fixture in each render.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of the same vanity as Bathroom 1.png, relit and dressed with a different towel, framed print and light fixture in each render.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-3.jpg" data-name="Bathroom 3.png" data-verdict="REJECT" data-reason="AI staging built on THU-Bathroom Photo #3.png, where the added bottle labels read as smeared pseudo-letters instead of real words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-3.jpg" data-name="Bathroom 3.png" data-verdict="AI-DETECTED" data-reason="AI staging built on THU-Bathroom Photo #3.png, where the added bottle labels read as smeared pseudo-letters instead of real words." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-3.jpg" loading="lazy" alt="Bathroom 3.png">
-        <figcaption><b>REJECT</b> AI staging built on THU-Bathroom Photo #3.png, where the added bottle labels read as smeared pseudo-letters instead of real words.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging built on THU-Bathroom Photo #3.png, where the added bottle labels read as smeared pseudo-letters instead of real words.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-4.jpg" data-name="Bedroom 1.png" data-verdict="REJECT" data-reason="AI staging of a vacant bedroom in which the closet door is rendered as a floating white panel with no hinges and no frame behind it." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-4.jpg" data-name="Bedroom 1.png" data-verdict="AI-DETECTED" data-reason="AI staging of a vacant bedroom in which the closet door is rendered as a floating white panel with no hinges and no frame behind it." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-4.jpg" loading="lazy" alt="Bedroom 1.png">
-        <figcaption><b>REJECT</b> AI staging of a vacant bedroom in which the closet door is rendered as a floating white panel with no hinges and no frame behind it.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of a vacant bedroom in which the closet door is rendered as a floating white panel with no hinges and no frame behind it.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-5.jpg" data-name="Bedroom 2.png" data-verdict="REJECT" data-reason="AI staging built on THU-Master Bedroom Photo #1.png, the same three doorways with a bed, dresser, rug and bench painted into the empty room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-5.jpg" data-name="Bedroom 2.png" data-verdict="AI-DETECTED" data-reason="AI staging built on THU-Master Bedroom Photo #1.png, the same three doorways with a bed, dresser, rug and bench painted into the empty room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-5.jpg" loading="lazy" alt="Bedroom 2.png">
-        <figcaption><b>REJECT</b> AI staging built on THU-Master Bedroom Photo #1.png, the same three doorways with a bed, dresser, rug and bench painted into the empty room.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging built on THU-Master Bedroom Photo #1.png, the same three doorways with a bed, dresser, rug and bench painted into the empty room.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-6.jpg" data-name="Building Exterior.png" data-verdict="REJECT" data-reason="AI exterior at the batch size of 1448x1086, where the porch lantern's interior is a smeared blob instead of a bulb and the lawn shows no wear, cars or residents." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-6.jpg" data-name="Building Exterior.png" data-verdict="AI-DETECTED" data-reason="AI exterior at the batch size of 1448x1086, where the porch lantern's interior is a smeared blob instead of a bulb and the lawn shows no wear, cars or residents." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-6.jpg" loading="lazy" alt="Building Exterior.png">
-        <figcaption><b>REJECT</b> AI exterior at the batch size of 1448x1086, where the porch lantern's interior is a smeared blob instead of a bulb and the lawn shows no wear, cars or residents.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI exterior at the batch size of 1448x1086, where the porch lantern's interior is a smeared blob instead of a bulb and the lawn shows no wear, cars or residents.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-7.jpg" data-name="Creme Exteriors.png" data-verdict="REJECT" data-reason="AI exterior at the batch size of 1448x1086, with a flawless uniform lawn and evenly spaced identical shrubs that do not match the real grounds visible in THU Front.jpg." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-7.jpg" data-name="Creme Exteriors.png" data-verdict="AI-DETECTED" data-reason="AI exterior at the batch size of 1448x1086, with a flawless uniform lawn and evenly spaced identical shrubs that do not match the real grounds visible in THU Front.jpg." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-7.jpg" loading="lazy" alt="Creme Exteriors.png">
-        <figcaption><b>REJECT</b> AI exterior at the batch size of 1448x1086, with a flawless uniform lawn and evenly spaced identical shrubs that do not match the real grounds visible in THU Front.jpg.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI exterior at the batch size of 1448x1086, with a flawless uniform lawn and evenly spaced identical shrubs that do not match the real grounds visible in THU Front.jpg.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-8.jpg" data-name="Kitchen 2.png" data-verdict="REJECT" data-reason="AI staging at 1086x1448 with a coffee maker, produce, framed art and towels added to what is an empty counter in the unit photos." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-8.jpg" data-name="Kitchen 2.png" data-verdict="AI-DETECTED" data-reason="AI staging at 1086x1448 with a coffee maker, produce, framed art and towels added to what is an empty counter in the unit photos." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-8.jpg" loading="lazy" alt="Kitchen 2.png">
-        <figcaption><b>REJECT</b> AI staging at 1086x1448 with a coffee maker, produce, framed art and towels added to what is an empty counter in the unit photos.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging at 1086x1448 with a coffee maker, produce, framed art and towels added to what is an empty counter in the unit photos.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-9.jpg" data-name="Kitchen 3.png" data-verdict="REJECT" data-reason="AI staging of the same dining corner as Kitchen 4.png, furnished with a completely different table, chairs and wall art in each render." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-9.jpg" data-name="Kitchen 3.png" data-verdict="AI-DETECTED" data-reason="AI staging of the same dining corner as Kitchen 4.png, furnished with a completely different table, chairs and wall art in each render." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-9.jpg" loading="lazy" alt="Kitchen 3.png">
-        <figcaption><b>REJECT</b> AI staging of the same dining corner as Kitchen 4.png, furnished with a completely different table, chairs and wall art in each render.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of the same dining corner as Kitchen 4.png, furnished with a completely different table, chairs and wall art in each render.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-10.jpg" data-name="Kitchen 4.png" data-verdict="REJECT" data-reason="AI staging of the same dining corner as Kitchen 3.png, furnished with a completely different table, chair and wall art in each render." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-10.jpg" data-name="Kitchen 4.png" data-verdict="AI-DETECTED" data-reason="AI staging of the same dining corner as Kitchen 3.png, furnished with a completely different table, chair and wall art in each render." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-10.jpg" loading="lazy" alt="Kitchen 4.png">
-        <figcaption><b>REJECT</b> AI staging of the same dining corner as Kitchen 3.png, furnished with a completely different table, chair and wall art in each render.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of the same dining corner as Kitchen 3.png, furnished with a completely different table, chair and wall art in each render.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-11.jpg" data-name="Kitchen 5.png" data-verdict="REJECT" data-reason="AI staging with an invented framed print reading GOOD FOOD GOOD MOOD plus a shelf and sconce that do not exist in the unit." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-11.jpg" data-name="Kitchen 5.png" data-verdict="AI-DETECTED" data-reason="AI staging with an invented framed print reading GOOD FOOD GOOD MOOD plus a shelf and sconce that do not exist in the unit." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-11.jpg" loading="lazy" alt="Kitchen 5.png">
-        <figcaption><b>REJECT</b> AI staging with an invented framed print reading GOOD FOOD GOOD MOOD plus a shelf and sconce that do not exist in the unit.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging with an invented framed print reading GOOD FOOD GOOD MOOD plus a shelf and sconce that do not exist in the unit.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-12.jpg" data-name="Kitchen.png" data-verdict="REJECT" data-reason="AI staging of a vacant kitchen at 1448x1086, with a fruit bowl, canisters, plants and a floor runner added that are not in the unit." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-12.jpg" data-name="Kitchen.png" data-verdict="AI-DETECTED" data-reason="AI staging of a vacant kitchen at 1448x1086, with a fruit bowl, canisters, plants and a floor runner added that are not in the unit." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-12.jpg" loading="lazy" alt="Kitchen.png">
-        <figcaption><b>REJECT</b> AI staging of a vacant kitchen at 1448x1086, with a fruit bowl, canisters, plants and a floor runner added that are not in the unit.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of a vacant kitchen at 1448x1086, with a fruit bowl, canisters, plants and a floor runner added that are not in the unit.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-13.jpg" data-name="Living Room 2.png" data-verdict="REJECT" data-reason="AI staging at 1086x1448 with a sofa, rug, coffee table, TV console and lamp added to an empty room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-13.jpg" data-name="Living Room 2.png" data-verdict="AI-DETECTED" data-reason="AI staging at 1086x1448 with a sofa, rug, coffee table, TV console and lamp added to an empty room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-13.jpg" loading="lazy" alt="Living Room 2.png">
-        <figcaption><b>REJECT</b> AI staging at 1086x1448 with a sofa, rug, coffee table, TV console and lamp added to an empty room.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging at 1086x1448 with a sofa, rug, coffee table, TV console and lamp added to an empty room.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-14.jpg" data-name="Living Room 3.png" data-verdict="REJECT" data-reason="AI staging built on THU-Living Room Photo #2.png, the same stair and front door with a sectional, rug, TV and lamps painted into the empty room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-14.jpg" data-name="Living Room 3.png" data-verdict="AI-DETECTED" data-reason="AI staging built on THU-Living Room Photo #2.png, the same stair and front door with a sectional, rug, TV and lamps painted into the empty room." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-14.jpg" loading="lazy" alt="Living Room 3.png">
-        <figcaption><b>REJECT</b> AI staging built on THU-Living Room Photo #2.png, the same stair and front door with a sectional, rug, TV and lamps painted into the empty room.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging built on THU-Living Room Photo #2.png, the same stair and front door with a sectional, rug, TV and lamps painted into the empty room.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-15.jpg" data-name="Living Room.png" data-verdict="REJECT" data-reason="AI staging of a vacant living room with a full furniture set painted in, and the armchair at lower right is cut off by an edge that does not follow the floor line." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-15.jpg" data-name="Living Room.png" data-verdict="AI-DETECTED" data-reason="AI staging of a vacant living room with a full furniture set painted in, and the armchair at lower right is cut off by an edge that does not follow the floor line." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-15.jpg" loading="lazy" alt="Living Room.png">
-        <figcaption><b>REJECT</b> AI staging of a vacant living room with a full furniture set painted in, and the armchair at lower right is cut off by an edge that does not follow the floor line.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI staging of a vacant living room with a full furniture set painted in, and the armchair at lower right is cut off by an edge that does not follow the floor line.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-16.jpg" data-name="Outdoor Brown Exteriors.png" data-verdict="REJECT" data-reason="AI exterior at 1383x1137 with a deep blue sky and flower beds added, and the mansard shingles rendered as a flat repeating pattern rather than real shingle courses." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-16.jpg" data-name="Outdoor Brown Exteriors.png" data-verdict="AI-DETECTED" data-reason="AI exterior at 1383x1137 with a deep blue sky and flower beds added, and the mansard shingles rendered as a flat repeating pattern rather than real shingle courses." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-16.jpg" loading="lazy" alt="Outdoor Brown Exteriors.png">
-        <figcaption><b>REJECT</b> AI exterior at 1383x1137 with a deep blue sky and flower beds added, and the mansard shingles rendered as a flat repeating pattern rather than real shingle courses.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI exterior at 1383x1137 with a deep blue sky and flower beds added, and the mansard shingles rendered as a flat repeating pattern rather than real shingle courses.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-17.jpg" data-name="Outdoor Exterior.png" data-verdict="REJECT" data-reason="AI exterior at the batch size of 1448x1086, with a door wreath and flower beds painted in and every blade of grass rendered to the same length." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-17.jpg" data-name="Outdoor Exterior.png" data-verdict="AI-DETECTED" data-reason="AI exterior at the batch size of 1448x1086, with a door wreath and flower beds painted in and every blade of grass rendered to the same length." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-17.jpg" loading="lazy" alt="Outdoor Exterior.png">
-        <figcaption><b>REJECT</b> AI exterior at the batch size of 1448x1086, with a door wreath and flower beds painted in and every blade of grass rendered to the same length.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI exterior at the batch size of 1448x1086, with a door wreath and flower beds painted in and every blade of grass rendered to the same length.</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/thurmont/f-18.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="AI redraw of the entrance sign at the batch size of 1122x1402, in which the EQUAL HOUSING line runs together into a single smeared glyph and the wheelchair symbol's wheel is left as a broken open circle." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+      <figure class="card ai" data-full="img/thurmont/f-18.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="AI redraw of the entrance sign at the batch size of 1122x1402, in which the EQUAL HOUSING line runs together into a single smeared glyph and the wheelchair symbol's wheel is left as a broken open circle." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
         <img src="img/thurmont/t-18.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> AI redraw of the entrance sign at the batch size of 1122x1402, in which the EQUAL HOUSING line runs together into a single smeared glyph and the wheelchair symbol's wheel is left as a broken open circle.</figcaption>
+        <figcaption><b>AI-DETECTED</b> AI redraw of the entrance sign at the batch size of 1122x1402, in which the EQUAL HOUSING line runs together into a single smeared glyph and the wheelchair symbol's wheel is left as a broken open circle.</figcaption>
       </figure>
       <figure class="card reject" data-full="img/thurmont/f-21.jpg" data-name="THU-2nd Bedroom Photo #1.png" data-verdict="REJECT" data-reason="~340 KB web-size PNG at 1015x760 of an empty bedroom corner with a burned-in 02/13/2023 date stamp and a black bar along the bottom edge." data-source="Drive - website re-download">
         <img src="img/thurmont/t-21.jpg" loading="lazy" alt="THU-2nd Bedroom Photo #1.png">
@@ -1743,21 +1745,21 @@
         <img src="img/villagegreen/t-6.jpg" loading="lazy" alt="Village Green Sign.jpg">
         <figcaption><b>REVIEW</b> Sharp real photo of the same sign under blue sky with the phone number correct, though at 1889x1417 it may itself be a resized copy, so it is a candidate sign upgrade once provenance is confirmed.</figcaption>
       </figure>
+      <figure class="card ai" data-full="img/villagegreen/f-2.jpg" data-name="Property Sign 1.png" data-verdict="AI-DETECTED" data-reason="1448x1086 PNG from the 8/3-4 processed batch, with the Equal Housing fine print scrambled into pseudo-letters and the permit parking sign behind it redrawn as wobbly nonsense." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/villagegreen/t-2.jpg" loading="lazy" alt="Property Sign 1.png">
+        <figcaption><b>AI-DETECTED</b> 1448x1086 PNG from the 8/3-4 processed batch, with the Equal Housing fine print scrambled into pseudo-letters and the permit parking sign behind it redrawn as wobbly nonsense.</figcaption>
+      </figure>
+      <figure class="card ai" data-full="img/villagegreen/f-4.jpg" data-name="Property Sign.png" data-verdict="AI-DETECTED" data-reason="1475x1067 PNG from the 8/3-4 processed batch, and the office placard has been redrawn to read Phone: 301-638-1600 when the real sign reads 301-638-1800." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
+        <img src="img/villagegreen/t-4.jpg" loading="lazy" alt="Property Sign.png">
+        <figcaption><b>AI-DETECTED</b> 1475x1067 PNG from the 8/3-4 processed batch, and the office placard has been redrawn to read Phone: 301-638-1600 when the real sign reads 301-638-1800.</figcaption>
+      </figure>
       <figure class="card reject" data-full="img/villagegreen/f-1.jpg" data-name="2 bedroom-primary bedroom closet.jpg" data-verdict="REJECT" data-reason="Left third of the frame is the air-handler alcove with torn duct insulation and loose wiring — reads as unfinished maintenance work" data-source="Drive 8/6 · shot 7/2026">
         <img src="img/villagegreen/t-1.jpg" loading="lazy" alt="2 bedroom-primary bedroom closet.jpg">
         <figcaption><b>REJECT</b> Left third of the frame is the air-handler alcove with torn duct insulation and loose wiring — reads as unfinished maintenance work</figcaption>
       </figure>
-      <figure class="card reject" data-full="img/villagegreen/f-2.jpg" data-name="Property Sign 1.png" data-verdict="REJECT" data-reason="1448x1086 PNG from the 8/3-4 processed batch, with the Equal Housing fine print scrambled into pseudo-letters and the permit parking sign behind it redrawn as wobbly nonsense." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/villagegreen/t-2.jpg" loading="lazy" alt="Property Sign 1.png">
-        <figcaption><b>REJECT</b> 1448x1086 PNG from the 8/3-4 processed batch, with the Equal Housing fine print scrambled into pseudo-letters and the permit parking sign behind it redrawn as wobbly nonsense.</figcaption>
-      </figure>
       <figure class="card reject" data-full="img/villagegreen/f-3.jpg" data-name="Property Sign.jpg" data-verdict="REJECT" data-reason="1001x750 web-sized copy of the same sign, framed small against a large empty mulch bed, with the office phone line too soft to read." data-source="Drive '1. Photos' folder (shared 8/6)">
         <img src="img/villagegreen/t-3.jpg" loading="lazy" alt="Property Sign.jpg">
         <figcaption><b>REJECT</b> 1001x750 web-sized copy of the same sign, framed small against a large empty mulch bed, with the office phone line too soft to read.</figcaption>
-      </figure>
-      <figure class="card reject" data-full="img/villagegreen/f-4.jpg" data-name="Property Sign.png" data-verdict="REJECT" data-reason="1475x1067 PNG from the 8/3-4 processed batch, and the office placard has been redrawn to read Phone: 301-638-1600 when the real sign reads 301-638-1800." data-source="Drive 'Updated Marketing Pictures' (8/3-4 AI batch)">
-        <img src="img/villagegreen/t-4.jpg" loading="lazy" alt="Property Sign.png">
-        <figcaption><b>REJECT</b> 1475x1067 PNG from the 8/3-4 processed batch, and the office placard has been redrawn to read Phone: 301-638-1600 when the real sign reads 301-638-1800.</figcaption>
       </figure></div>
     </section>
 <div id="lb"><button class="x" aria-label="Close">×</button><img alt=""><div class="meta"></div></div>
@@ -1766,7 +1768,7 @@
   var lb=document.getElementById('lb'),im=lb.querySelector('img'),meta=lb.querySelector('.meta');
   document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){
     im.src=c.dataset.full;
-    var cls=c.classList.contains('keep')?'k':(c.classList.contains('reject')?'r':'h');
+    var cls=c.classList.contains('keep')?'k':(c.classList.contains('reject')?'r':(c.classList.contains('ai')?'a':(c.classList.contains('gap')?'g':'h')));
     meta.innerHTML='<b class="'+cls+'">'+c.dataset.verdict+'</b> — '+c.dataset.name+' · '+c.dataset.source+'<br>'+c.dataset.reason;
     lb.classList.add('open');});});
   function close(){lb.classList.remove('open');im.src='';}
