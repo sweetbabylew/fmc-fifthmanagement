@@ -1,0 +1,162 @@
+/* review-app.css — styles for the interactive layer of the photo-review page.
+ * Copied verbatim to corporate/review/app.css by build-review.js and linked
+ * AFTER the generator's inline <style>, so it can override a few base rules.
+ */
+
+/* --- the sticky top: property nav + reviewer bar share one sticky block ---- */
+#stickytop { position: sticky; top: 0; z-index: 6; background: #fff; border-bottom: 1px solid #ddd; }
+#stickytop nav { position: static; border-bottom: 1px solid #eee; max-height: 4.6em; overflow-y: auto; }
+
+.mebar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px;
+  padding: 9px 24px; background: #fbfaf7; font-size: 13px;
+}
+.me-who { display: flex; align-items: center; gap: 7px; font-weight: 600; color: #274430; }
+.me-who input {
+  font: inherit; font-weight: 600; padding: 5px 9px; width: 150px;
+  border: 1.5px solid #c9c6bd; border-radius: 6px; background: #fff; color: #222;
+}
+.me-who input:focus { outline: 2px solid #274430; outline-offset: 1px; border-color: #274430; }
+.me-who input.shake { animation: shake .45s; border-color: #c0392b; }
+@keyframes shake {
+  0%,100% { transform: translateX(0); } 20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); } 60% { transform: translateX(-3px); } 80% { transform: translateX(3px); }
+}
+
+.me-progress { display: flex; align-items: center; gap: 8px; color: #555; white-space: nowrap; }
+.me-bar { display: inline-block; width: 110px; height: 7px; background: #e3e0d8; border-radius: 99px; overflow: hidden; }
+.me-bar i { display: block; height: 100%; width: 0; background: #274430; transition: width .25s; }
+
+.me-filters { display: flex; flex-wrap: wrap; gap: 5px; }
+.fchip {
+  font: inherit; font-size: 12.5px; padding: 4px 11px; border-radius: 999px; cursor: pointer;
+  border: 1px solid #cfccc3; background: #fff; color: #444;
+}
+.fchip:hover { border-color: #274430; color: #274430; }
+.fchip.on { background: #274430; border-color: #274430; color: #fff; }
+
+.me-actions { display: flex; align-items: center; gap: 9px; margin-left: auto; }
+.btn {
+  font: inherit; font-size: 12.5px; font-weight: 600; padding: 5px 12px; border-radius: 6px; cursor: pointer;
+  border: 1px solid #274430; background: #274430; color: #fff; text-decoration: none; white-space: nowrap;
+}
+.btn.ghost { background: #fff; color: #274430; }
+.btn:hover { filter: brightness(1.08); }
+
+.status { font-size: 12.5px; color: #777; min-width: 120px; }
+.status.ok { color: #1a7f37; }
+.status.busy { color: #8a7b3a; }
+.status.warn { color: #c0392b; font-weight: 600; }
+
+/* --- per-card controls ----------------------------------------------------- */
+.card { position: relative; }
+.card figcaption { min-height: 44px; }
+
+.tools {
+  display: flex; align-items: center; gap: 5px; padding: 6px 8px 8px;
+  border-top: 1px solid #eeece6; background: #fcfbf8;
+}
+.tbtn {
+  font: inherit; font-size: 15px; line-height: 1; padding: 5px 9px; cursor: pointer;
+  border: 1px solid #d6d3ca; border-radius: 6px; background: #fff; filter: grayscale(1); opacity: .55;
+}
+.tbtn:hover { opacity: 1; filter: none; border-color: #999; }
+.tbtn.on { opacity: 1; filter: none; }
+.tbtn.up.on { background: #e6f4ea; border-color: #1a7f37; box-shadow: inset 0 0 0 1px #1a7f37; }
+.tbtn.down.on { background: #fdecea; border-color: #c0392b; box-shadow: inset 0 0 0 1px #c0392b; }
+.tbtn.note.on { background: #fdf5e0; border-color: #b7791f; box-shadow: inset 0 0 0 1px #b7791f; }
+
+.peers { margin-left: auto; display: flex; gap: 3px; }
+.peer {
+  font-size: 10.5px; font-weight: 700; letter-spacing: .3px; padding: 3px 5px; border-radius: 4px;
+  background: #e8e6df; color: #555; cursor: help;
+}
+.peer.up { background: #d8eede; color: #14652c; }
+.peer.down { background: #fadfd9; color: #96291b; }
+
+.notebox { display: none; padding: 0 8px 8px; background: #fcfbf8; }
+.notebox.open { display: block; }
+.notebox textarea {
+  width: 100%; font: inherit; font-size: 12.5px; padding: 6px 7px; resize: vertical;
+  border: 1px solid #d6d3ca; border-radius: 6px; background: #fff; color: #222;
+}
+.notebox textarea:focus { outline: 2px solid #274430; outline-offset: 1px; }
+
+.peernotes {
+  padding: 6px 9px 8px; font-size: 12px; line-height: 1.45; color: #555;
+  background: #f4f2ec; border-top: 1px solid #e8e5dd;
+}
+.peernotes b { color: #274430; }
+
+/* Your own decision, visible at a glance from across the grid. */
+.card.mine-up::before, .card.mine-down::before {
+  content: "✓"; position: absolute; top: 6px; right: 6px; z-index: 2;
+  width: 22px; height: 22px; border-radius: 50%; color: #fff; font-size: 13px;
+  line-height: 22px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,.35);
+}
+.card.mine-up::before { background: #1a7f37; }
+.card.mine-down::before { content: "✕"; background: #c0392b; }
+.card.pending::after {
+  content: "saving…"; position: absolute; top: 6px; left: 6px; z-index: 2;
+  font-size: 10.5px; padding: 2px 6px; border-radius: 4px;
+  background: rgba(20,22,20,.72); color: #fff;
+}
+
+.card.hide, section.hide { display: none; }
+.secprog {
+  margin-left: 10px; font-size: 12px; font-weight: 600; color: #8a7b3a;
+  background: #fdf5e0; padding: 2px 8px; border-radius: 999px; vertical-align: 2px;
+}
+.secprog.done { color: #14652c; background: #e6f4ea; }
+
+/* --- lightbox additions ---------------------------------------------------- */
+/* The lightbox now carries buttons and a comment box under the photo, so the
+   photo gives up some height and the whole stack scrolls rather than pushing
+   the controls off a short laptop screen. `safe center` keeps the top edge
+   reachable when the content is taller than the viewport. */
+#lb { overflow-y: auto; justify-content: safe center; }
+#lb img { max-height: 60vh; }
+@media (max-height: 820px) { #lb img { max-height: 48vh; } }
+.lbtools { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+.lbtools .tbtn { font-size: 20px; padding: 8px 16px; background: #22251f; border-color: #444; color: #fff; }
+.lbtools .tbtn:hover { border-color: #999; }
+.lbnav {
+  font: inherit; font-size: 26px; line-height: 1; width: 42px; height: 42px; cursor: pointer;
+  border: 1px solid #444; border-radius: 8px; background: #22251f; color: #eee;
+}
+.lbnav:hover { border-color: #999; }
+.lbnote { margin-top: 10px; width: min(680px, 90vw); }
+.lbnote textarea {
+  width: 100%; font: inherit; font-size: 13.5px; padding: 8px 10px; resize: vertical;
+  border: 1px solid #444; border-radius: 8px; background: #1a1c19; color: #f0efe9;
+}
+.lbnote textarea:focus { outline: 2px solid #69d08a; outline-offset: 1px; }
+.lbpos { color: #9c9c96; font-size: 12.5px; }
+.lbpeers { margin-top: 8px; display: flex; flex-direction: column; gap: 2px; font-size: 12.5px; color: #c9c8c2; }
+
+/* --- narrow screens -------------------------------------------------------- */
+/* On a phone the sticky block is competing with the photos for screen, so the
+   filters become one swipeable row and the progress bar drops to its number. */
+@media (max-width: 700px) {
+  .mebar { padding: 7px 14px; gap: 7px 10px; }
+  .me-who input { width: 110px; }
+  .me-progress { font-size: 12px; }
+  .me-progress .me-bar { display: none; }
+  .me-filters {
+    flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
+    width: 100%; order: 3; padding-bottom: 1px;
+  }
+  .me-filters::-webkit-scrollbar { display: none; }
+  .fchip { flex: 0 0 auto; }
+  .me-actions { margin-left: 0; order: 4; width: 100%; }
+  .status {
+    min-width: 0; flex: 1; text-align: right;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  #stickytop nav { max-height: 3.2em; padding: 6px 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .me-bar i { transition: none; }
+  .me-who input.shake { animation: none; }
+}
