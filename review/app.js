@@ -92,6 +92,8 @@
     '<div class="me-filters" id="me-filters">' +
     chip("all", "All") +
     chip("unmarked", "Not marked by me") +
+    chip("needs", "Needs a call") +
+    chip("live", "Live on site") +
     chip("mine-up", "My 👍") +
     chip("mine-down", "My 👎") +
     chip("any-down", "Any 👎") +
@@ -304,6 +306,10 @@
     var all = state.peers[pid] || [];
     switch (state.filter) {
       case "unmarked": return !mine;
+      // The two that matter most: anything unresolved, and anything we are
+      // already showing the public.
+      case "needs": return card.classList.contains("ai") || card.classList.contains("hold");
+      case "live": return card.classList.contains("islive");
       case "mine-up": return !!mine && mine.vote === "up";
       case "mine-down": return !!mine && mine.vote === "down";
       case "any-down": return all.some(function (m) { return m.vote === "down"; }) || (mine && mine.vote === "down");
@@ -398,7 +404,11 @@
     var cls = card.classList.contains("keep") ? "k"
       : card.classList.contains("reject") ? "r"
       : card.classList.contains("ai") ? "a"
-      : card.classList.contains("gap") ? "g" : "h";
+      : card.classList.contains("gap") ? "g"
+      : card.classList.contains("dup") ? "d" : "h";
+    var liveNote = card.dataset.live
+      ? ' <span class="lblive">LIVE ON SITE as ' + esc(card.dataset.live) + "</span>"
+      : "";
     var i = lb.list.map(function (c) { return c.dataset.pid; }).indexOf(lb.pid);
     var others = (state.peers[lb.pid] || []).filter(function (m) { return m.id !== state.id; });
     var peerHtml = others.length
@@ -411,7 +421,7 @@
 
     lbMeta.innerHTML =
       '<b class="' + cls + '">' + esc(card.dataset.verdict) + "</b> — " + esc(card.dataset.name) +
-      " · " + esc(card.dataset.source) +
+      " · " + esc(card.dataset.source) + liveNote +
       (i > -1 ? ' <span class="lbpos">' + (i + 1) + " of " + lb.list.length + "</span>" : "") +
       "<br>" + esc(card.dataset.reason) + peerHtml;
 
