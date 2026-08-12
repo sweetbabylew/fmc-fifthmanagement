@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>FMC Photo Review — August 7, 2026</title>
+<title>FMC Photo Review — August 12, 2026</title>
 <style>
   :root{--keep:#1a7f37;--reject:#c0392b;--hold:#b7791f;--ai:#e0b000;--gap:#8e5bc0;--dup:#8a8f98}
   *{box-sizing:border-box}body{font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#f6f5f2;color:#222}
@@ -28,6 +28,7 @@
   .card.keep b{color:var(--keep)}.card.reject b{color:var(--reject)}.card.hold b{color:var(--hold)}.card.ai b{color:#a07f00}.card.gap b{color:var(--gap)}.card.dup b{color:#6b7079}
   .livetag{position:absolute;left:0;top:8px;z-index:2;background:#1c3f8f;color:#fff;font-size:10px;font-weight:700;letter-spacing:.6px;padding:3px 7px 3px 6px;border-radius:0 4px 4px 0;box-shadow:0 1px 4px rgba(0,0,0,.3)}
   .card.ai .livetag,.card.hold .livetag{background:#b3261e}
+  .livetag.pulled{background:#6b7079}
   #lb{position:fixed;inset:0;background:rgba(12,14,12,.93);display:none;z-index:50;flex-direction:column;align-items:center;justify-content:center;padding:24px}
   #lb.open{display:flex}#lb img{max-width:94vw;max-height:78vh;border-radius:6px;background:#000}
   #lb .meta{color:#eee;font-size:14px;margin-top:12px;max-width:900px;text-align:center}
@@ -37,7 +38,7 @@
 <link rel="stylesheet" href="app.css?v=bd44a0f8"></head>
 <body data-api="https://fmc-forms.fifthmanagement.workers.dev">
 <header><h1>FMC property photo review</h1>
-<p>Internal page — August 7, 2026. Green = keeper · Yellow = AI-detected (evidence on each card) · Purple = not good enough but it’s all we’ve got (dated print scans still live on a site) · Red = the photograph itself is rejected, with the reason · Amber = needs a decision · Grey dashed = duplicate file, meaning we already have this exact photo — which says nothing about whether the photo is any good. A <b>LIVE ON SITE</b> flag means that exact image is published on the property website right now; on a yellow or amber card the flag turns red, because that is a photo we are unsure about and showing to the public.</p>
+<p>Internal page — August 12, 2026. Green = keeper · Yellow = AI-detected (evidence on each card) · Purple = not good enough but it’s all we’ve got (dated print scans still live on a site) · Red = the photograph itself is rejected, with the reason · Amber = needs a decision · Grey dashed = duplicate file, meaning we already have this exact photo — which says nothing about whether the photo is any good. A <b>LIVE ON SITE</b> flag means that exact image is published on the property website right now; on a yellow or amber card the flag turns red, because that is a photo we are unsure about and showing to the public. A grey <b>OFF THE PAGES</b> tag means the file is still on the server but no page displays it any more — retained only until the unlinked-photo cleanup.</p>
 <p><b>Put your name in the box below, then thumb each photo up or down and add a comment if you want to say why.</b> Everyone on the team sees everyone else’s marks, and they save as you go. Click any photo to enlarge, then use ← → to move, U for yes, D for no, C to comment. Shot-list chips show coverage per property: green = covered with a current usable shot, amber = covered only by an old/small/questionable shot, red = missing.</p>
 <p style="font-size:12px;opacity:.8">Every photo here was re-opened and re-judged on 2026-08-11, after nine Colonial Beach photos turned out to be decades-old scans that had been marked green purely by default. 98 of the 123 live-site photos had never actually been looked at. 119 verdicts changed, each one re-checked by a second reviewer who overturned a third of the proposed changes. Expect more purple and red than before: a lot of what is on the sites is scanned prints showing siding colours and playground equipment the properties no longer have.</p></header>
 <div class="legend">
@@ -206,13 +207,18 @@
 
     <section id="carroll">
       <h2>Carroll LaPlata Village <span class="count">13 photos</span></h2>
-      <p class="propnote">Dexter's note on the share: 'I need to get more photos.' The folder was assembled minutes before sharing; it holds no archive — 4 AI-processed sign/walkway renders and 3 unverified camera shots. The six photos on the live site are all ~320×240 previews awaiting full-size re-sends.</p>
-      <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip yellow" title="Live shot is a tiny preview; full-size re-send requested">Building front</span><span class="chip yellow" title="Tiny preview only">Entrance sign</span><span class="chip yellow" title="Tiny preview only">Playground</span><span class="chip red" title="Missing">Kitchen</span><span class="chip red" title="Missing">Living room</span><span class="chip red" title="Missing">Bedroom</span><span class="chip red" title="Missing">Bathroom</span><span class="chip red" title="Missing">In-unit washer/dryer</span><span class="chip red" title="Missing">Office entrance</span></div>
+      <p class="propnote">Dexter's note on the share: 'I need to get more photos.' The folder was assembled minutes before sharing; it holds no archive — 4 AI-processed sign/walkway renders and 3 unverified camera shots. The six photos on the live site are all ~320×240 previews awaiting full-size re-sends. 8/12: the superseded sign scan (dead seven-digit number) was deleted outright and replaced by sign-2.jpg, built from the IMG_2629 original; exterior-2 and exterior-3 came off the pages (files retained pending the unlinked-photo cleanup). The remaining live previews (hero, exterior-1, playground) still await full-size re-sends.</p>
+      <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip yellow" title="Live shot is a tiny preview; full-size re-send requested">Building front</span><span class="chip green" title="Current sign live 8/12 (sign-2, from the 8/6 Drive original)">Entrance sign</span><span class="chip yellow" title="Tiny preview only">Playground</span><span class="chip red" title="Missing">Kitchen</span><span class="chip red" title="Missing">Living room</span><span class="chip red" title="Missing">Bedroom</span><span class="chip red" title="Missing">Bathroom</span><span class="chip red" title="Missing">In-unit washer/dryer</span><span class="chip red" title="Missing">Office entrance</span></div>
       <div class="grid">
-      <figure class="card keep" data-pid="carroll:o:IMG_2629.jpeg" data-full="img/carroll/f-4.jpg" data-name="IMG_2629.jpeg" data-verdict="KEEP" data-reason="The only real photo of the current sign and the proof sign.jpg is obsolete. Lands sideways, flat overcast light, sign small against a lot of dead lawn. Rotate it and use it to replace sign.jpg." data-source="Drive '1. Photos' folder (shared 8/6)">
+      <figure class="card keep islive" data-pid="carroll:o:IMG_2629.jpeg" data-full="img/carroll/f-4.jpg" data-name="IMG_2629.jpeg" data-verdict="KEEP" data-reason="The only real photo of the current sign and the proof sign.jpg is obsolete. Lands sideways, flat overcast light, sign small against a lot of dead lawn. Rotate it and use it to replace sign.jpg." data-source="Drive '1. Photos' folder (shared 8/6)" data-live="sign-2.jpg">
         <img src="img/carroll/t-4.jpg" loading="lazy" alt="IMG_2629.jpeg">
-        
+        <span class="livetag" title="This exact photo is published right now at carrolllaplatavillage.com/assets/img/sign-2.jpg">LIVE ON SITE</span>
         <figcaption><b>KEEP</b> The only real photo of the current sign and the proof sign.jpg is obsolete. Lands sideways, flat overcast light, sign small against a lot of dead lawn. Rotate it and use it to replace sign.jpg.</figcaption>
+      </figure>
+      <figure class="card keep" data-pid="carroll:l:sign-2.jpg" data-full="img/carroll/f-13.jpg" data-name="sign-2.jpg" data-verdict="KEEP" data-reason="The current sign, live since 8/12: white board with the tree crest, 301-934-6814 / TTY 711, and the rental-office arrow, in the landscaped bed. Built from Drive original IMG_2629.jpeg, rotated upright." data-source="Live website">
+        <img src="img/carroll/t-13.jpg" loading="lazy" alt="sign-2.jpg">
+        
+        <figcaption><b>KEEP</b> The current sign, live since 8/12: white board with the tree crest, 301-934-6814 / TTY 711, and the rental-office arrow, in the landscaped bed. Built from Drive original IMG_2629.jpeg, rotated upright.</figcaption>
       </figure>
       <figure class="card gap" data-pid="carroll:o:IMG_2626_1_.jpeg" data-full="img/carroll/f-2.jpg" data-name="IMG_2626 (1).jpeg" data-verdict="ALL WE’VE GOT" data-reason="Genuine current photo, but it lands rotated 90 degrees and half the frame is empty sidewalk with the door shoved to the edge. Only close-up of the Leasing Office plaque; needs a re-shoot." data-source="Drive '1. Photos' folder (shared 8/6)">
         <img src="img/carroll/t-2.jpg" loading="lazy" alt="IMG_2626 (1).jpeg">
@@ -259,20 +265,15 @@
         
         <figcaption><b>AI-DETECTED</b> AI render at 1086x1448 with a synthesized golden-hour sky and a warm cream tint applied across the whole sign face, which is white in every real photo of it.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="carroll:l:exterior-2.jpg" data-full="img/carroll/f-9.jpg" data-name="exterior-2.jpg" data-verdict="REJECT" data-reason="Old scan of a police substation unit in mauve siding with a teal door, colours the property no longer has. Also the wrong subject for a leasing page. Pull it." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="carroll:l:exterior-2.jpg" data-full="img/carroll/f-9.jpg" data-name="exterior-2.jpg" data-verdict="REJECT" data-reason="Old scan of a police substation unit in mauve siding with a teal door, colours the property no longer has. Also the wrong subject for a leasing page. Pull it." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/carroll/t-9.jpg" loading="lazy" alt="exterior-2.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at carrolllaplatavillage.com/assets/img/exterior-2.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Old scan of a police substation unit in mauve siding with a teal door, colours the property no longer has. Also the wrong subject for a leasing page. Pull it.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="carroll:l:exterior-3.jpg" data-full="img/carroll/f-10.jpg" data-name="exterior-3.jpg" data-verdict="REJECT" data-reason="Old scan showing a blue-grey colour scheme the property no longer has, plus visible wall staining, a patched panel and a trash barrel in frame. Advertises the wrong condition. Pull it." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="carroll:l:exterior-3.jpg" data-full="img/carroll/f-10.jpg" data-name="exterior-3.jpg" data-verdict="REJECT" data-reason="Old scan showing a blue-grey colour scheme the property no longer has, plus visible wall staining, a patched panel and a trash barrel in frame. Advertises the wrong condition. Pull it." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/carroll/t-10.jpg" loading="lazy" alt="exterior-3.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at carrolllaplatavillage.com/assets/img/exterior-3.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Old scan showing a blue-grey colour scheme the property no longer has, plus visible wall staining, a patched panel and a trash barrel in frame. Advertises the wrong condition. Pull it.</figcaption>
-      </figure>
-      <figure class="card reject" data-pid="carroll:l:sign.jpg" data-full="img/carroll/f-13.jpg" data-name="sign.jpg" data-verdict="REJECT" data-reason="Superseded sign publishing a dead seven-digit number and painted office hours. The real current sign is white and reads 301-934-6814 / TTY 711, visible in IMG_2629. Pull it now." data-source="Live website">
-        <img src="img/carroll/t-13.jpg" loading="lazy" alt="sign.jpg">
-        
-        <figcaption><b>REJECT</b> Superseded sign publishing a dead seven-digit number and painted office hours. The real current sign is white and reads 301-934-6814 / TTY 711, visible in IMG_2629. Pull it now.</figcaption>
       </figure></div>
     </section>
 
@@ -291,34 +292,34 @@
         
         <figcaption><b>KEEP</b> Current monument sign on brick piers, with the full 804-224-9496 number and the TTY line. This is the good sign photo and the one the site uses.</figcaption>
       </figure>
-      <figure class="card gap" data-pid="colonialbeach:l:entrance.jpg" data-full="img/colonialbeach/f-1.jpg" data-name="entrance.jpg" data-verdict="ALL WE’VE GOT" data-reason="Print scan of a unit entrance with a seasonal wreath on the door. Dated finishes and a resident's decorations; the only ground-level entrance shot we hold." data-source="Live website">
+      <figure class="card gap ispulled" data-pid="colonialbeach:l:entrance.jpg" data-full="img/colonialbeach/f-1.jpg" data-name="entrance.jpg" data-verdict="ALL WE’VE GOT" data-reason="Print scan of a unit entrance with a seasonal wreath on the door. Dated finishes and a resident's decorations; the only ground-level entrance shot we hold." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/colonialbeach/t-1.jpg" loading="lazy" alt="entrance.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at colonialbeachvillageapts.com/assets/img/entrance.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>ALL WE’VE GOT</b> Print scan of a unit entrance with a seasonal wreath on the door. Dated finishes and a resident's decorations; the only ground-level entrance shot we hold.</figcaption>
       </figure>
-      <figure class="card gap" data-pid="colonialbeach:l:exterior-1.jpg" data-full="img/colonialbeach/f-2.jpg" data-name="exterior-1.jpg" data-verdict="ALL WE’VE GOT" data-reason="Print scan with a white border, soft and low resolution. Shows blue doors and older siding; the current aerial shows the buildings re-sided since. All we have for a street-level building front, but not publishable as-is." data-source="Live website">
+      <figure class="card gap ispulled" data-pid="colonialbeach:l:exterior-1.jpg" data-full="img/colonialbeach/f-2.jpg" data-name="exterior-1.jpg" data-verdict="ALL WE’VE GOT" data-reason="Print scan with a white border, soft and low resolution. Shows blue doors and older siding; the current aerial shows the buildings re-sided since. All we have for a street-level building front, but not publishable as-is." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/colonialbeach/t-2.jpg" loading="lazy" alt="exterior-1.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at colonialbeachvillageapts.com/assets/img/exterior-1.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>ALL WE’VE GOT</b> Print scan with a white border, soft and low resolution. Shows blue doors and older siding; the current aerial shows the buildings re-sided since. All we have for a street-level building front, but not publishable as-is.</figcaption>
       </figure>
-      <figure class="card gap" data-pid="colonialbeach:l:grounds.jpg" data-full="img/colonialbeach/f-4.jpg" data-name="grounds.jpg" data-verdict="ALL WE’VE GOT" data-reason="Print scan of a building side and lawn, dominated by a tree and a row of through-wall AC units. All we have for grounds besides the aerials." data-source="Live website">
+      <figure class="card gap ispulled" data-pid="colonialbeach:l:grounds.jpg" data-full="img/colonialbeach/f-4.jpg" data-name="grounds.jpg" data-verdict="ALL WE’VE GOT" data-reason="Print scan of a building side and lawn, dominated by a tree and a row of through-wall AC units. All we have for grounds besides the aerials." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/colonialbeach/t-4.jpg" loading="lazy" alt="grounds.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at colonialbeachvillageapts.com/assets/img/grounds.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>ALL WE’VE GOT</b> Print scan of a building side and lawn, dominated by a tree and a row of through-wall AC units. All we have for grounds besides the aerials.</figcaption>
       </figure>
-      <figure class="card gap" data-pid="colonialbeach:l:townhomes.jpg" data-full="img/colonialbeach/f-8.jpg" data-name="townhomes.jpg" data-verdict="ALL WE’VE GOT" data-reason="Print scan showing blue and purple siding that no longer matches the property — the current aerial shows tan. All we have for a townhome row, and clearly out of date." data-source="Live website">
+      <figure class="card gap ispulled" data-pid="colonialbeach:l:townhomes.jpg" data-full="img/colonialbeach/f-8.jpg" data-name="townhomes.jpg" data-verdict="ALL WE’VE GOT" data-reason="Print scan showing blue and purple siding that no longer matches the property — the current aerial shows tan. All we have for a townhome row, and clearly out of date." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/colonialbeach/t-8.jpg" loading="lazy" alt="townhomes.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at colonialbeachvillageapts.com/assets/img/townhomes.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>ALL WE’VE GOT</b> Print scan showing blue and purple siding that no longer matches the property — the current aerial shows tan. All we have for a townhome row, and clearly out of date.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="colonialbeach:l:exterior-2.jpg" data-full="img/colonialbeach/f-3.jpg" data-name="exterior-2.jpg" data-verdict="REJECT" data-reason="Same view as entrance.jpg in the white-and-blue era, but a blank gable wall eats the right half and the doorway sits small and shadowed. Bad frame on top of dead colours; entrance.jpg covers this subject better." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="colonialbeach:l:exterior-2.jpg" data-full="img/colonialbeach/f-3.jpg" data-name="exterior-2.jpg" data-verdict="REJECT" data-reason="Same view as entrance.jpg in the white-and-blue era, but a blank gable wall eats the right half and the doorway sits small and shadowed. Bad frame on top of dead colours; entrance.jpg covers this subject better." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/colonialbeach/t-3.jpg" loading="lazy" alt="exterior-2.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at colonialbeachvillageapts.com/assets/img/exterior-2.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Same view as entrance.jpg in the white-and-blue era, but a blank gable wall eats the right half and the doorway sits small and shadowed. Bad frame on top of dead colours; entrance.jpg covers this subject better.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="colonialbeach:l:playground.jpg" data-full="img/colonialbeach/f-6.jpg" data-name="playground.jpg" data-verdict="REJECT" data-reason="Scanned print of the OLD wooden play structure with a yellow slide, swing bench and wood-chip surfacing. Gone: the hero shows teal-and-red steel equipment on tan safety surfacing. Publishing it would misrepresent the property." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="colonialbeach:l:playground.jpg" data-full="img/colonialbeach/f-6.jpg" data-name="playground.jpg" data-verdict="REJECT" data-reason="Scanned print of the OLD wooden play structure with a yellow slide, swing bench and wood-chip surfacing. Gone: the hero shows teal-and-red steel equipment on tan safety surfacing. Publishing it would misrepresent the property." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/colonialbeach/t-6.jpg" loading="lazy" alt="playground.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at colonialbeachvillageapts.com/assets/img/playground.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Scanned print of the OLD wooden play structure with a yellow slide, swing bench and wood-chip surfacing. Gone: the hero shows teal-and-red steel equipment on tan safety surfacing. Publishing it would misrepresent the property.</figcaption>
       </figure></div>
     </section>
@@ -483,9 +484,9 @@
         
         <figcaption><b>DUPLICATE FILE</b> 320x240 website-resolution copy at ~63 KB of the laundry room, and the full-size version is now live.</figcaption>
       </figure>
-      <figure class="card dup islive" data-pid="ihe:o:IMG_1370.jpeg" data-full="img/ihe/f-16.jpg" data-name="IMG_1370.jpeg" data-verdict="DUPLICATE FILE" data-reason="320x240 website-resolution copy at ~65 KB of the community room with the mailbox wall, and the full-size version is now live." data-source="Drive - website re-download" data-live="community-room.jpg">
+      <figure class="card dup islive" data-pid="ihe:o:IMG_1370.jpeg" data-full="img/ihe/f-16.jpg" data-name="IMG_1370.jpeg" data-verdict="DUPLICATE FILE" data-reason="320x240 website-resolution copy at ~65 KB of the community room with the mailbox wall, and the full-size version is now live." data-source="Drive - website re-download" data-live="community-room-2.jpg">
         <img src="img/ihe/t-16.jpg" loading="lazy" alt="IMG_1370.jpeg">
-        <span class="livetag" title="This exact photo is published right now at indianheadelderlyapts.com/assets/img/community-room.jpg">LIVE ON SITE</span>
+        <span class="livetag" title="This exact photo is published right now at indianheadelderlyapts.com/assets/img/community-room-2.jpg">LIVE ON SITE</span>
         <figcaption><b>DUPLICATE FILE</b> 320x240 website-resolution copy at ~65 KB of the community room with the mailbox wall, and the full-size version is now live.</figcaption>
       </figure>
       <figure class="card dup" data-pid="ihe:o:IMG_1374.jpeg" data-full="img/ihe/f-17.jpg" data-name="IMG_1374.jpeg" data-verdict="DUPLICATE FILE" data-reason="The community room end to end, lounge chairs included, but only 320px while the live full-size set covers the same room. It was marked reject even though its own note said the full-size is live." data-source="Drive - website re-download">
@@ -639,7 +640,7 @@
 
     <section id="kentisland">
       <h2>Kent Island Village <span class="count">27 photos</span></h2>
-      <p class="propnote">Dexter's note: 'They will need more updated pictures and original pictures.' The folder's only camera files are photos of a freshly repainted park bench (including a before/after collage) — maintenance documentation, not marketing. The 'Updated Marketing Pictures' subfolder holds 2 AI renders and 7 website re-downloads.</p>
+      <p class="propnote">Dexter's note: 'They will need more updated pictures and original pictures.' The folder's only camera files are photos of a freshly repainted park bench (including a before/after collage) — maintenance documentation, not marketing. The 'Updated Marketing Pictures' subfolder holds 2 AI renders and 7 website re-downloads. 8/12: exterior-4, exterior-6, and both old-equipment playground scans came off the pages (files retained pending cleanup); playground-3 remains the live playground shot.</p>
       <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip yellow" title="Live exterior is real but small; larger original wanted">Building front</span><span class="chip green" title="Live">Entrance sign</span><span class="chip green" title="Live">Playground</span><span class="chip green" title="Live">Kitchen</span><span class="chip green" title="Live">Living room</span><span class="chip green" title="Live">Bedroom</span><span class="chip red" title="Missing">Bathroom</span><span class="chip green" title="Live">Laundry room</span><span class="chip red" title="Missing">Office entrance</span></div>
       <div class="grid">
       <figure class="card keep" data-pid="kentisland:l:bedroom.jpg" data-full="img/kentisland/f-13.jpg" data-name="bedroom.jpg" data-verdict="KEEP" data-reason="Staged bedroom, round mirror over a dark wood bed, three windows with white blinds, beige carpet. Opened and checked: a real, current, well-lit photo with no scan border and no AI tells. Green stands." data-source="Live website">
@@ -722,24 +723,24 @@
         
         <figcaption><b>REJECT</b> Three-panel before and after collage of the bench repaint with a decorative border, a reciprocating saw and an extension cord in one panel, so it is maintenance documentation rather than marketing material.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="kentisland:l:exterior-4.jpg" data-full="img/kentisland/f-17.jpg" data-name="exterior-4.jpg" data-verdict="REJECT" data-reason="Scanned print. Mansard-shingle townhome with light blue entry doors - exterior-1 shows the same building with red doors, so the blue is gone. Also frames overhead power lines, a commercial strip and a parking bumper. Misleading." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="kentisland:l:exterior-4.jpg" data-full="img/kentisland/f-17.jpg" data-name="exterior-4.jpg" data-verdict="REJECT" data-reason="Scanned print. Mansard-shingle townhome with light blue entry doors - exterior-1 shows the same building with red doors, so the blue is gone. Also frames overhead power lines, a commercial strip and a parking bumper. Misleading." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/kentisland/t-17.jpg" loading="lazy" alt="exterior-4.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at kentislandvillage.com/assets/img/exterior-4.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Scanned print. Mansard-shingle townhome with light blue entry doors - exterior-1 shows the same building with red doors, so the blue is gone. Also frames overhead power lines, a commercial strip and a parking bumper. Misleading.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="kentisland:l:exterior-6.jpg" data-full="img/kentisland/f-19.jpg" data-name="exterior-6.jpg" data-verdict="REJECT" data-reason="Scanned print, white border. Grey siding and light blue doors, but the property is now cream siding with red doors (see hero and exterior-1). Overgrown shrubs, resident plastic chair. Two generations out of date." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="kentisland:l:exterior-6.jpg" data-full="img/kentisland/f-19.jpg" data-name="exterior-6.jpg" data-verdict="REJECT" data-reason="Scanned print, white border. Grey siding and light blue doors, but the property is now cream siding with red doors (see hero and exterior-1). Overgrown shrubs, resident plastic chair. Two generations out of date." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/kentisland/t-19.jpg" loading="lazy" alt="exterior-6.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at kentislandvillage.com/assets/img/exterior-6.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Scanned print, white border. Grey siding and light blue doors, but the property is now cream siding with red doors (see hero and exterior-1). Overgrown shrubs, resident plastic chair. Two generations out of date.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="kentisland:l:playground-2.jpg" data-full="img/kentisland/f-24.jpg" data-name="playground-2.jpg" data-verdict="REJECT" data-reason="Scanned print, white border. Same retired play structure plus two spring riders, grey-sided building behind. Washed colour, subject small in frame. Current equipment is the blue frame with green wave slide in playground-3." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="kentisland:l:playground-2.jpg" data-full="img/kentisland/f-24.jpg" data-name="playground-2.jpg" data-verdict="REJECT" data-reason="Scanned print, white border. Same retired play structure plus two spring riders, grey-sided building behind. Washed colour, subject small in frame. Current equipment is the blue frame with green wave slide in playground-3." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/kentisland/t-24.jpg" loading="lazy" alt="playground-2.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at kentislandvillage.com/assets/img/playground-2.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Scanned print, white border. Same retired play structure plus two spring riders, grey-sided building behind. Washed colour, subject small in frame. Current equipment is the blue frame with green wave slide in playground-3.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="kentisland:l:playground.jpg" data-full="img/kentisland/f-26.jpg" data-name="playground.jpg" data-verdict="REJECT" data-reason="Scanned print, white border all round. Old play structure - yellow posts, blue panels, red base, straight metal slide - and grey building siding. Both replaced; playground-3 shows the current blue-and-green structure. Superseded." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="kentisland:l:playground.jpg" data-full="img/kentisland/f-26.jpg" data-name="playground.jpg" data-verdict="REJECT" data-reason="Scanned print, white border all round. Old play structure - yellow posts, blue panels, red base, straight metal slide - and grey building siding. Both replaced; playground-3 shows the current blue-and-green structure. Superseded." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/kentisland/t-26.jpg" loading="lazy" alt="playground.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at kentislandvillage.com/assets/img/playground.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Scanned print, white border all round. Old play structure - yellow posts, blue panels, red base, straight metal slide - and grey building siding. Both replaced; playground-3 shows the current blue-and-green structure. Superseded.</figcaption>
       </figure>
       <figure class="card dup islive" data-pid="kentisland:o:Bedroom.jpg" data-full="img/kentisland/f-4.jpg" data-name="Bedroom.jpg" data-verdict="DUPLICATE FILE" data-reason="~185 KB website copy at 1043x695, too small for print or a full-width web hero." data-source="Drive - website re-download" data-live="bedroom.jpg">
@@ -1046,9 +1047,9 @@
     </section>
 
     <section id="pineview">
-      <h2>Pineview Apartments <span class="count">27 photos</span></h2>
-      <p class="propnote">Dexter's note: 'They will need more original pictures but have updated pictures.' In practice the folder holds 5 AI renders (including two bedrooms with no source photo anywhere — invented rooms), 6 website re-downloads, and three real sign shots of the same subject. No new interiors or exteriors.</p>
-      <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip yellow" title="Live exterior is small">Building front</span><span class="chip green" title="Full-size original in the folder">Entrance sign</span><span class="chip red" title="Missing">Playground</span><span class="chip yellow" title="Small original">Kitchen</span><span class="chip yellow" title="Small originals">Living room</span><span class="chip yellow" title="Small originals">Bedroom</span><span class="chip yellow" title="Small original">Bathroom</span><span class="chip red" title="Missing">In-unit washer/dryer</span><span class="chip red" title="Missing">Office entrance</span></div>
+      <h2>Pineview Apartments <span class="count">26 photos</span></h2>
+      <p class="propnote">Dexter's note: 'They will need more original pictures but have updated pictures.' In practice the folder holds 5 AI renders (including two bedrooms with no source photo anywhere — invented rooms), 6 website re-downloads, and three real sign shots of the same subject. No new interiors or exteriors. 8/12: the old blue-sign scan (seven-digit number) was deleted outright — sign-front.jpg is the current sign. exterior-2 and breezeway came off the pages (files retained pending cleanup).</p>
+      <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip yellow" title="Live exterior is small">Building front</span><span class="chip green" title="Current sign live (sign-front)">Entrance sign</span><span class="chip red" title="Missing">Playground</span><span class="chip yellow" title="Small original">Kitchen</span><span class="chip yellow" title="Small originals">Living room</span><span class="chip yellow" title="Small originals">Bedroom</span><span class="chip yellow" title="Small original">Bathroom</span><span class="chip red" title="Missing">In-unit washer/dryer</span><span class="chip red" title="Missing">Office entrance</span></div>
       <div class="grid">
       <figure class="card keep" data-pid="pineview:o:PV_Sign.jpg" data-full="img/pineview/f-11.jpg" data-name="PV Sign.jpg" data-verdict="KEEP" data-reason="Downgrade from reject: nothing is wrong with the photograph. It is simply the third frame of one sign, downscaled to 1531x1148, with dappled shade across the face. Redundant, not bad." data-source="Drive '1. Photos' folder (shared 8/6)">
         <img src="img/pineview/t-11.jpg" loading="lazy" alt="PV Sign.jpg">
@@ -1150,20 +1151,15 @@
         
         <figcaption><b>AI-DETECTED</b> AI render, not a Pineview kitchen. Melted range backguard, garbled control display, cooktop with no burners, fused knife handles, a food box with illegible pseudo-lettering and no shadow. Island and stainless suite are invented.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="pineview:l:breezeway.jpg" data-full="img/pineview/f-18.jpg" data-name="breezeway.jpg" data-verdict="REJECT" data-reason="Crooked scan with white wedges at two corners and a green cast over the right third. Winter, dormant grass, debris on the ground. The same brick stair tower is framed better in the hero and exterior-1." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="pineview:l:breezeway.jpg" data-full="img/pineview/f-18.jpg" data-name="breezeway.jpg" data-verdict="REJECT" data-reason="Crooked scan with white wedges at two corners and a green cast over the right third. Winter, dormant grass, debris on the ground. The same brick stair tower is framed better in the hero and exterior-1." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/pineview/t-18.jpg" loading="lazy" alt="breezeway.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at pineview-apartments.com/assets/img/breezeway.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Crooked scan with white wedges at two corners and a green cast over the right third. Winter, dormant grass, debris on the ground. The same brick stair tower is framed better in the hero and exterior-1.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="pineview:l:exterior-2.jpg" data-full="img/pineview/f-20.jpg" data-name="exterior-2.jpg" data-verdict="REJECT" data-reason="Winter, dead brown grass, 1980s square-body Ford pickup and boxy van parked out front. Blue siding with blue doors, both since replaced by light grey siding and red doors. Misleading about the property today." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="pineview:l:exterior-2.jpg" data-full="img/pineview/f-20.jpg" data-name="exterior-2.jpg" data-verdict="REJECT" data-reason="Winter, dead brown grass, 1980s square-body Ford pickup and boxy van parked out front. Blue siding with blue doors, both since replaced by light grey siding and red doors. Misleading about the property today." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/pineview/t-20.jpg" loading="lazy" alt="exterior-2.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at pineview-apartments.com/assets/img/exterior-2.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Winter, dead brown grass, 1980s square-body Ford pickup and boxy van parked out front. Blue siding with blue doors, both since replaced by light grey siding and red doors. Misleading about the property today.</figcaption>
-      </figure>
-      <figure class="card reject" data-pid="pineview:l:sign.jpg" data-full="img/pineview/f-27.jpg" data-name="sign.jpg" data-verdict="REJECT" data-reason="The old blue sign board: script lettering, a 7-digit phone with no area code, painted office hours. Replaced by the white sign in sign-front.jpg, which carries 301-638-1800 and TTY 711. Scanned print." data-source="Live website">
-        <img src="img/pineview/t-27.jpg" loading="lazy" alt="sign.jpg">
-        
-        <figcaption><b>REJECT</b> The old blue sign board: script lettering, a 7-digit phone with no area code, painted office hours. Replaced by the white sign in sign-front.jpg, which carries 301-638-1800 and TTY 711. Scanned print.</figcaption>
       </figure>
       <figure class="card dup islive" data-pid="pineview:o:Bathroom.jpg" data-full="img/pineview/f-1.jpg" data-name="Bathroom.jpg" data-verdict="DUPLICATE FILE" data-reason="~116 KB website copy at 685x731, too small to reuse." data-source="Drive - website re-download" data-live="bathroom.jpg">
         <img src="img/pineview/t-1.jpg" loading="lazy" alt="Bathroom.jpg">
@@ -1408,8 +1404,8 @@
 
     <section id="stevensville">
       <h2>Stevensville Village <span class="count">17 photos</span></h2>
-      <p class="propnote">The folder holds 8 files, none with a camera filename: two AI sign renders 15 seconds apart, a walkway re-render from the AI window, and five web-sized room images. The '1. Photos' originals folder is empty.</p>
-      <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip green" title="Live">Building front</span><span class="chip green" title="Live">Entrance sign</span><span class="chip red" title="Senior site — most-wanted shot">Community room</span><span class="chip yellow" title="Small original">Kitchen</span><span class="chip yellow" title="Small original">Living room</span><span class="chip yellow" title="Small original">Bedroom</span><span class="chip red" title="Missing">Bathroom</span><span class="chip red" title="Missing">Laundry room</span><span class="chip red" title="Missing">Office entrance</span></div>
+      <p class="propnote">The folder holds 8 files, none with a camera filename: two AI sign renders 15 seconds apart, a walkway re-render from the AI window, and five web-sized room images. The '1. Photos' originals folder is empty. 8/12: the old grey-panel sign scan, the photocopied grounds page, and the blown-out corner exterior came off the pages (exterior-corner still holds the unit-photo slot). No photo of the current sign exists — the folder's only versions are AI renders.</p>
+      <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip green" title="Live">Building front</span><span class="chip red" title="Missing — the old grey-panel scan came off the pages 8/12; only AI renders exist">Entrance sign</span><span class="chip red" title="Senior site — most-wanted shot">Community room</span><span class="chip yellow" title="Small original">Kitchen</span><span class="chip yellow" title="Small original">Living room</span><span class="chip yellow" title="Small original">Bedroom</span><span class="chip red" title="Missing">Bathroom</span><span class="chip red" title="Missing">Laundry room</span><span class="chip red" title="Missing">Office entrance</span></div>
       <div class="grid">
       <figure class="card keep" data-pid="stevensville:o:Bedroom_1.jpg" data-full="img/stevensville/f-1.jpg" data-name="Bedroom 1.jpg" data-verdict="KEEP" data-reason="Real photograph, wrongly rejected: six different botanical prints with genuine cast shadows, ceiling fan, cars through the blinds. Soft and a touch hazy, but it is the only real bedroom and should replace the render." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)">
         <img src="img/stevensville/t-1.jpg" loading="lazy" alt="Bedroom 1.jpg">
@@ -1481,14 +1477,14 @@
         
         <figcaption><b>REJECT</b> Scanned print. Over half the frame is a blank, blown-out white gable wall; the only subject is one storm door with a Halloween pumpkin and autumn wreath. Dates itself, and there is nothing to see.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="stevensville:l:grounds.jpg" data-full="img/stevensville/f-11.jpg" data-name="grounds.jpg" data-verdict="REJECT" data-reason="Not a photograph but a colour photocopy of a four-up page: tiles clipped at the page edge, posterised colour, pink-cast roofs. Shows the old grey wooden monument sign the property has since replaced with brick piers." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="stevensville:l:grounds.jpg" data-full="img/stevensville/f-11.jpg" data-name="grounds.jpg" data-verdict="REJECT" data-reason="Not a photograph but a colour photocopy of a four-up page: tiles clipped at the page edge, posterised colour, pink-cast roofs. Shows the old grey wooden monument sign the property has since replaced with brick piers." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/stevensville/t-11.jpg" loading="lazy" alt="grounds.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at stevensvillevillageapts.com/assets/img/grounds.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Not a photograph but a colour photocopy of a four-up page: tiles clipped at the page edge, posterised colour, pink-cast roofs. Shows the old grey wooden monument sign the property has since replaced with brick piers.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="stevensville:l:sign.jpg" data-full="img/stevensville/f-16.jpg" data-name="sign.jpg" data-verdict="REJECT" data-reason="Scanned print. Ornamental grass hides most of the sign face, and the sign itself is the old grey scroll-top panel, not the current white sign on brick piers. Two 1990s station wagons in the lot." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="stevensville:l:sign.jpg" data-full="img/stevensville/f-16.jpg" data-name="sign.jpg" data-verdict="REJECT" data-reason="Scanned print. Ornamental grass hides most of the sign face, and the sign itself is the old grey scroll-top panel, not the current white sign on brick piers. Two 1990s station wagons in the lot." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/stevensville/t-16.jpg" loading="lazy" alt="sign.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at stevensvillevillageapts.com/assets/img/sign.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Scanned print. Ornamental grass hides most of the sign face, and the sign itself is the old grey scroll-top panel, not the current white sign on brick piers. Two 1990s station wagons in the lot.</figcaption>
       </figure>
       <figure class="card dup islive" data-pid="stevensville:o:Living_Room.jpg" data-full="img/stevensville/f-5.jpg" data-name="Living Room.jpg" data-verdict="DUPLICATE FILE" data-reason="Re-examined and judged a real photograph, not a render: real brass hinges, knob and deadbolt with a keyway, a door sweep with its shadow gap, and mini-blind slats with an uneven bottom rail. The earlier AI flag was guilt by association with Kitchen.jpg from the same folder. The file itself is the small copy already published." data-source="Drive 'Updated Marketing Pictures' (web-size re-upload)" data-live="living-room.jpg">
@@ -1499,8 +1495,8 @@
     </section>
 
     <section id="taneytown">
-      <h2>Taneytown Village <span class="count">61 photos</span></h2>
-      <p class="propnote">The folder's real material is a 24-photo set from roughly August 2020 (one file is named 'Bulding 4 August 2020') — usable as a stopgap but six years old. The 'Updated Marketing Pictures' subfolder holds 20 AI renders generated 1:1 from those originals, including a 'Playground.png' with no real-photo counterpart.</p>
+      <h2>Taneytown Village <span class="count">59 photos</span></h2>
+      <p class="propnote">The folder's real material is a 24-photo set from roughly August 2020 (one file is named 'Bulding 4 August 2020') — usable as a stopgap but six years old. The 'Updated Marketing Pictures' subfolder holds 20 AI renders generated 1:1 from those originals, including a 'Playground.png' with no real-photo counterpart. 8/12: the retired grey-sign scan and the defaced exterior-3 (drawn-on redaction boxes) were deleted outright; the faded hero and exterior-2 came off the gallery but still hold the banner and unit-photo slots until replacements from the 2020 set go in.</p>
       <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip yellow" title="Hero is a faded scan; 2020 real exteriors available as a stopgap">Building front</span><span class="chip green" title="Live">Entrance sign</span><span class="chip yellow" title="Tiny preview only; full-size re-send requested">Playground</span><span class="chip yellow" title="2020 vintage">Kitchen</span><span class="chip yellow" title="2020 vintage">Living room</span><span class="chip yellow" title="2020 vintage">Bedroom</span><span class="chip yellow" title="2020 vintage">Bathroom</span><span class="chip green" title="Live">In-unit washer/dryer</span><span class="chip red" title="Missing">Office entrance</span></div>
       <div class="grid">
       <figure class="card keep" data-pid="taneytown:o:TAN_Sign.JPG" data-full="img/taneytown/f-24.jpg" data-name="TAN Sign.JPG" data-verdict="KEEP" data-reason="Real, current entrance sign in good light, with the townhouse row and playground behind it. Sign paint is faded and a utility box sits at left, but nothing in frame is out of date." data-source="Drive folder (shared 8/6)">
@@ -1548,28 +1544,28 @@
         
         <figcaption><b>KEEP</b> Real, sharp, honest vacant bedroom with brown carpet and a parking-lot view. Mostly bare wall and a blown-out flare strip down the left edge, but nothing misleading. Weak keep; verdict stands.</figcaption>
       </figure>
-      <figure class="card keep" data-pid="taneytown:l:kitchen.jpg" data-full="img/taneytown/f-56.jpg" data-name="kitchen.jpg" data-verdict="KEEP" data-reason="Bright, sharp, real vacant kitchen: oak cabinets, faux-granite laminate, white coil-top range, wood-look floor. Appliances and counters are dated but accurate. Best interior in the set. Verdict stands." data-source="Live website">
-        <img src="img/taneytown/t-56.jpg" loading="lazy" alt="kitchen.jpg">
+      <figure class="card keep" data-pid="taneytown:l:kitchen.jpg" data-full="img/taneytown/f-55.jpg" data-name="kitchen.jpg" data-verdict="KEEP" data-reason="Bright, sharp, real vacant kitchen: oak cabinets, faux-granite laminate, white coil-top range, wood-look floor. Appliances and counters are dated but accurate. Best interior in the set. Verdict stands." data-source="Live website">
+        <img src="img/taneytown/t-55.jpg" loading="lazy" alt="kitchen.jpg">
         
         <figcaption><b>KEEP</b> Bright, sharp, real vacant kitchen: oak cabinets, faux-granite laminate, white coil-top range, wood-look floor. Appliances and counters are dated but accurate. Best interior in the set. Verdict stands.</figcaption>
       </figure>
-      <figure class="card keep" data-pid="taneytown:l:laundry.jpg" data-full="img/taneytown/f-57.jpg" data-name="laundry.jpg" data-verdict="KEEP" data-reason="Real in-unit washer and dryer, a genuine amenity worth showing. Heavy amber colour cast, washer lid left propped open, bare pull chain. Adequate as-is; verdict stands, but easy to improve." data-source="Live website">
-        <img src="img/taneytown/t-57.jpg" loading="lazy" alt="laundry.jpg">
+      <figure class="card keep" data-pid="taneytown:l:laundry.jpg" data-full="img/taneytown/f-56.jpg" data-name="laundry.jpg" data-verdict="KEEP" data-reason="Real in-unit washer and dryer, a genuine amenity worth showing. Heavy amber colour cast, washer lid left propped open, bare pull chain. Adequate as-is; verdict stands, but easy to improve." data-source="Live website">
+        <img src="img/taneytown/t-56.jpg" loading="lazy" alt="laundry.jpg">
         
         <figcaption><b>KEEP</b> Real in-unit washer and dryer, a genuine amenity worth showing. Heavy amber colour cast, washer lid left propped open, bare pull chain. Adequate as-is; verdict stands, but easy to improve.</figcaption>
       </figure>
-      <figure class="card keep" data-pid="taneytown:l:living-room-2.jpg" data-full="img/taneytown/f-58.jpg" data-name="living-room-2.jpg" data-verdict="KEEP" data-reason="Change to hold. An entirely empty room, three bare walls, brown carpet, one window, with nothing identifying it as a living room and different carpet from living-room.jpg. Needs a label decision or re-shoot." data-source="Live website">
-        <img src="img/taneytown/t-58.jpg" loading="lazy" alt="living-room-2.jpg">
+      <figure class="card keep" data-pid="taneytown:l:living-room-2.jpg" data-full="img/taneytown/f-57.jpg" data-name="living-room-2.jpg" data-verdict="KEEP" data-reason="Change to hold. An entirely empty room, three bare walls, brown carpet, one window, with nothing identifying it as a living room and different carpet from living-room.jpg. Needs a label decision or re-shoot." data-source="Live website">
+        <img src="img/taneytown/t-57.jpg" loading="lazy" alt="living-room-2.jpg">
         
         <figcaption><b>KEEP</b> Change to hold. An entirely empty room, three bare walls, brown carpet, one window, with nothing identifying it as a living room and different carpet from living-room.jpg. Needs a label decision or re-shoot.</figcaption>
       </figure>
-      <figure class="card keep" data-pid="taneytown:l:living-room.jpg" data-full="img/taneytown/f-59.jpg" data-name="living-room.jpg" data-verdict="KEEP" data-reason="Real, sharp vacant living room; the front door and stair wall at least read as a townhouse. About half the frame is blank wall, so it is the weakest keep. Verdict stands." data-source="Live website">
-        <img src="img/taneytown/t-59.jpg" loading="lazy" alt="living-room.jpg">
+      <figure class="card keep" data-pid="taneytown:l:living-room.jpg" data-full="img/taneytown/f-58.jpg" data-name="living-room.jpg" data-verdict="KEEP" data-reason="Real, sharp vacant living room; the front door and stair wall at least read as a townhouse. About half the frame is blank wall, so it is the weakest keep. Verdict stands." data-source="Live website">
+        <img src="img/taneytown/t-58.jpg" loading="lazy" alt="living-room.jpg">
         
         <figcaption><b>KEEP</b> Real, sharp vacant living room; the front door and stair wall at least read as a townhouse. About half the frame is blank wall, so it is the weakest keep. Verdict stands.</figcaption>
       </figure>
-      <figure class="card keep" data-pid="taneytown:l:sign-2.jpg" data-full="img/taneytown/f-60.jpg" data-name="sign-2.jpg" data-verdict="KEEP" data-reason="The current sign, and the only photo here that proves it: gold TV monogram, TDD number, fair-housing marks, fresh plantings, and the real playground behind. Punchy phone HDR. Verdict stands." data-source="Live website">
-        <img src="img/taneytown/t-60.jpg" loading="lazy" alt="sign-2.jpg">
+      <figure class="card keep" data-pid="taneytown:l:sign-2.jpg" data-full="img/taneytown/f-59.jpg" data-name="sign-2.jpg" data-verdict="KEEP" data-reason="The current sign, and the only photo here that proves it: gold TV monogram, TDD number, fair-housing marks, fresh plantings, and the real playground behind. Punchy phone HDR. Verdict stands." data-source="Live website">
+        <img src="img/taneytown/t-59.jpg" loading="lazy" alt="sign-2.jpg">
         
         <figcaption><b>KEEP</b> The current sign, and the only photo here that proves it: gold TV monogram, TDD number, fair-housing marks, fresh plantings, and the real playground behind. Punchy phone HDR. Verdict stands.</figcaption>
       </figure>
@@ -1788,20 +1784,10 @@
         
         <figcaption><b>REJECT</b> Faded scanned print, 897x605, of a brick and siding row with a wooden ramp. No longer a gap: four real high-res exteriors sit unused in the Drive folder, so this is simply rejectable.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="taneytown:l:exterior-3.jpg" data-full="img/taneytown/f-54.jpg" data-name="exterior-3.jpg" data-verdict="REJECT" data-reason="Change to reject. Someone drew two crude black boxes over the storm door glass to redact something; the hand-drawn edges are obvious at full size. A defaced scan should not be published." data-source="Live website">
-        <img src="img/taneytown/t-54.jpg" loading="lazy" alt="exterior-3.jpg">
-        
-        <figcaption><b>REJECT</b> Change to reject. Someone drew two crude black boxes over the storm door glass to redact something; the hand-drawn edges are obvious at full size. A defaced scan should not be published.</figcaption>
-      </figure>
-      <figure class="card reject" data-pid="taneytown:l:hero.jpg" data-full="img/taneytown/f-55.jpg" data-name="hero.jpg" data-verdict="REJECT" data-reason="Change to reject. The homepage banner is a 907x609 faded scan with a white print border and a wooden porch swing no modern photo shows. taneytown2.jpg is real and 4418x2953. Swap it." data-source="Live website">
-        <img src="img/taneytown/t-55.jpg" loading="lazy" alt="hero.jpg">
+      <figure class="card reject" data-pid="taneytown:l:hero.jpg" data-full="img/taneytown/f-54.jpg" data-name="hero.jpg" data-verdict="REJECT" data-reason="Change to reject. The homepage banner is a 907x609 faded scan with a white print border and a wooden porch swing no modern photo shows. taneytown2.jpg is real and 4418x2953. Swap it." data-source="Live website">
+        <img src="img/taneytown/t-54.jpg" loading="lazy" alt="hero.jpg">
         
         <figcaption><b>REJECT</b> Change to reject. The homepage banner is a 907x609 faded scan with a white print border and a wooden porch swing no modern photo shows. taneytown2.jpg is real and 4418x2953. Swap it.</figcaption>
-      </figure>
-      <figure class="card reject" data-pid="taneytown:l:sign.jpg" data-full="img/taneytown/f-61.jpg" data-name="sign.jpg" data-verdict="REJECT" data-reason="The Colonial Beach miss again. Green KEEP, never opened, and it is a faded scan of a weathered grey wooden sign the property replaced. sign-2.jpg shows the sign standing there now." data-source="Live website">
-        <img src="img/taneytown/t-61.jpg" loading="lazy" alt="sign.jpg">
-        
-        <figcaption><b>REJECT</b> The Colonial Beach miss again. Green KEEP, never opened, and it is a faded scan of a weathered grey wooden sign the property replaced. sign-2.jpg shows the sign standing there now.</figcaption>
       </figure>
       <figure class="card dup" data-pid="taneytown:l:exterior-1.jpg" data-full="img/taneytown/f-52.jpg" data-name="exterior-1.jpg" data-verdict="DUPLICATE FILE" data-reason="Change to dup. This is the same print as hero.jpg, same tree, same porch swing, same clouds, scanned a few pixels wider. The site is currently showing one dead scan twice." data-source="Live website">
         <img src="img/taneytown/t-52.jpg" loading="lazy" alt="exterior-1.jpg">
@@ -1812,7 +1798,7 @@
 
     <section id="thurmont">
       <h2>Thurmont Village <span class="count">46 photos</span></h2>
-      <p class="propnote">31 of the folder's 33 files are PNGs — 18 AI renders from the 8/3–4 sessions plus 13 interior PNGs at web sizes that look like website re-uploads. The only credible camera original is the 2.5 MB building-front JPG, which could upgrade the aging homepage banner.</p>
+      <p class="propnote">31 of the folder's 33 files are PNGs — 18 AI renders from the 8/3–4 sessions plus 13 interior PNGs at web sizes that look like website re-uploads. The only credible camera original is the 2.5 MB building-front JPG, which could upgrade the aging homepage banner. 8/12: kitchen-2 (two-thirds blank wall) came off the pages; kitchen and kitchen-3 remain live.</p>
       <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip yellow" title="Real 2.5 MB front shot in the folder could replace the old banner">Building front</span><span class="chip yellow" title="Small file; likely web-resized">Entrance sign</span><span class="chip yellow" title="Small original">Kitchen</span><span class="chip yellow" title="Small original">Living room</span><span class="chip yellow" title="Small original">Bedroom</span><span class="chip yellow" title="Small originals with date stamps">Bathroom</span><span class="chip red" title="Missing">In-unit washer/dryer</span><span class="chip red" title="Missing">Office entrance</span></div>
       <div class="grid">
       <figure class="card keep" data-pid="thurmont:o:THU_Front.jpg" data-full="img/thurmont/f-19.jpg" data-name="THU Front.jpg" data-verdict="KEEP" data-reason="Genuine 4171x2535 camera photo of the townhome row under real conditions, showing actual grounds, trash cans and a patio chair, and it is sharp enough to replace the aging homepage banner." data-source="Drive folder (shared 8/6)">
@@ -2040,17 +2026,17 @@
         
         <figcaption><b>REJECT</b> ~291 KB web-size PNG at 1024x761 of a bare wall and closet with a burned-in 02/13/2023 date stamp, with no marketing subject in frame.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="thurmont:l:kitchen-2.jpg" data-full="img/thurmont/f-40.jpg" data-name="kitchen-2.jpg" data-verdict="REJECT" data-reason="Two-thirds blank wall and a closed door. The only kitchen content, the range and hood, is clipped at the right edge. kitchen.jpg and kitchen-3.jpg already cover this room properly; re-shoot the dining nook wider." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="thurmont:l:kitchen-2.jpg" data-full="img/thurmont/f-40.jpg" data-name="kitchen-2.jpg" data-verdict="REJECT" data-reason="Two-thirds blank wall and a closed door. The only kitchen content, the range and hood, is clipped at the right edge. kitchen.jpg and kitchen-3.jpg already cover this room properly; re-shoot the dining nook wider." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/thurmont/t-40.jpg" loading="lazy" alt="kitchen-2.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at thurmontvillage.com/assets/img/kitchen-2.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Two-thirds blank wall and a closed door. The only kitchen content, the range and hood, is clipped at the right edge. kitchen.jpg and kitchen-3.jpg already cover this room properly; re-shoot the dining nook wider.</figcaption>
       </figure></div>
     </section>
 
     <section id="villagegreen">
       <h2>Village Green Apartments <span class="count">23 photos</span></h2>
-      <p class="propnote">Refreshed 8/7: the seven vacant two-bedroom interiors from July (shot by Pam Reeves) are now live with a first 'A look inside' band. 14 National Night Out files in the folder are not shown here (residents pictured). Still missing: a laundry-room shot.</p>
-      <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip green" title="Live hero is a real photo">Building front</span><span class="chip green" title="Live">Entrance sign</span><span class="chip green" title="Live">Playground</span><span class="chip green" title="New 7/2026 interior">Kitchen</span><span class="chip green" title="Two new angles">Living room</span><span class="chip green" title="Both bedrooms covered">Bedroom</span><span class="chip green" title="New 7/2026 interior">Bathroom</span><span class="chip red" title="Missing">Laundry room</span><span class="chip green" title="Live">Office entrance</span></div>
+      <p class="propnote">Refreshed 8/7: the seven vacant two-bedroom interiors from July (shot by Pam Reeves) are now live with a first 'A look inside' band. 14 National Night Out files in the folder are not shown here (residents pictured). Still missing: a laundry-room shot. 8/12: the old office scan (vg-office) came off the pages, leaving no office-entrance shot; vg-ext still holds the unit-photo slot pending a replacement.</p>
+      <div class="shotlist"><span class="sl-label">Shot list:</span><span class="chip green" title="Live hero is a real photo">Building front</span><span class="chip green" title="Live">Entrance sign</span><span class="chip green" title="Live">Playground</span><span class="chip green" title="New 7/2026 interior">Kitchen</span><span class="chip green" title="Two new angles">Living room</span><span class="chip green" title="Both bedrooms covered">Bedroom</span><span class="chip green" title="New 7/2026 interior">Bathroom</span><span class="chip red" title="Missing">Laundry room</span><span class="chip red" title="Missing — the old scan came off the pages 8/12">Office entrance</span></div>
       <div class="grid">
       <figure class="card keep" data-pid="villagegreen:o:VG_Sign.jpg" data-full="img/villagegreen/f-5.jpg" data-name="VG Sign.jpg" data-verdict="KEEP" data-reason="Provenance settles it: same May 2025 phone visit as Property Sign.jpg, correct 301-638-1800, no retouching, sign clear of shrubs. Trade-off is flat overcast sky and parked cars plus a dumpster at right." data-source="Drive '1. Photos' folder (shared 8/6)">
         <img src="img/villagegreen/t-5.jpg" loading="lazy" alt="VG Sign.jpg">
@@ -2157,14 +2143,14 @@
         
         <figcaption><b>REJECT</b> Crooked scanned print tilted up at a blank two-story wall: blue-grey siding, no shutters, blown-out sky, no ground or context. Wrong siding for the property today and no subject in frame.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="villagegreen:l:vg-office.jpg" data-full="img/villagegreen/f-21.jpg" data-name="vg-office.jpg" data-verdict="REJECT" data-reason="Scanned print of a pale green-tinted building with no shutters, red holiday bows on the door, overgrown hedges, dead grass and litter on the walk. Shows no office and the wrong siding." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="villagegreen:l:vg-office.jpg" data-full="img/villagegreen/f-21.jpg" data-name="vg-office.jpg" data-verdict="REJECT" data-reason="Scanned print of a pale green-tinted building with no shutters, red holiday bows on the door, overgrown hedges, dead grass and litter on the walk. Shows no office and the wrong siding." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/villagegreen/t-21.jpg" loading="lazy" alt="vg-office.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at village-greenapts.com/assets/img/vg-office.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Scanned print of a pale green-tinted building with no shutters, red holiday bows on the door, overgrown hedges, dead grass and litter on the walk. Shows no office and the wrong siding.</figcaption>
       </figure>
-      <figure class="card reject" data-pid="villagegreen:l:vg-sign.jpg" data-full="img/villagegreen/f-22.jpg" data-name="vg-sign.jpg" data-verdict="REJECT" data-reason="Scanned print of the retired sign: teal panel, painted pine scene, 7-digit '843-0407' and painted MON.-FRI. 9:00-5:00 hours. Today's sign is white with 301-648-1800 on a separate plaque." data-source="Live website">
+      <figure class="card reject ispulled" data-pid="villagegreen:l:vg-sign.jpg" data-full="img/villagegreen/f-22.jpg" data-name="vg-sign.jpg" data-verdict="REJECT" data-reason="Scanned print of the retired sign: teal panel, painted pine scene, 7-digit '843-0407' and painted MON.-FRI. 9:00-5:00 hours. Today's sign is white with 301-648-1800 on a separate plaque." data-source="Server file — no longer on any page (kept until the unlinked-photo cleanup)">
         <img src="img/villagegreen/t-22.jpg" loading="lazy" alt="vg-sign.jpg">
-        
+        <span class="livetag pulled" title="Still on the server at village-greenapts.com/assets/img/vg-sign.jpg but no page shows it; kept until the unlinked-photo cleanup">OFF THE PAGES</span>
         <figcaption><b>REJECT</b> Scanned print of the retired sign: teal panel, painted pine scene, 7-digit '843-0407' and painted MON.-FRI. 9:00-5:00 hours. Today's sign is white with 301-648-1800 on a separate plaque.</figcaption>
       </figure></div>
     </section>
